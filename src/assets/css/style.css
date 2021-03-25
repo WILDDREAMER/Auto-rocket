@@ -375,6 +375,31 @@ h3 {
   font-family: "Poppins SemiBold";
 }
 
+footer {
+  background-color: #EFF2F5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer input {
+  margin-top: 24px;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: solid;
+  color: black;
+  box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
+}
+
+footer .btn {
+  width: 100%;
+  margin-top: 12px;
+  box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
+}
+
 .card-list {
   padding: 24px;
   display: flex;
@@ -442,30 +467,5 @@ h3 {
 .card-list .carCard .text-field .rate img {
   width: 16px;
   height: 16px;
-}
-
-footer {
-  background-color: #EFF2F5;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-footer input {
-  margin-top: 24px;
-  width: 100%;
-  padding: 8px 16px;
-  border-radius: 6px;
-  border: solid;
-  color: black;
-  box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
-}
-
-footer .btn {
-  width: 100%;
-  margin-top: 12px;
-  box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
 }
 /*# sourceMappingURL=style.css.map */

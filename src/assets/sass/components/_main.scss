@@ -1,0 +1,72 @@
+
+.logo{
+    width: 100%;
+    height: 64px;
+    @include flex(center, center);
+    img{
+        width: 182px;
+        height: 100%;
+    }
+    box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
+}
+
+.container{
+    padding: 24px;
+    @include flex(center,center);
+    background-color: #EFF2F5;
+    .text{
+        @include flex(center,center);
+        flex-direction: column;
+        padding-bottom: 24px;
+        span{
+            font-family: $font-primary-semi-bold;
+        }
+    }
+}
+
+.card-list{
+    padding: 24px;
+    background-color: #EFF2F5;
+    @include flex(center,center);
+    flex-direction: column;
+    gap: 16px;
+    .carCard{
+        background-color: white;
+        box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.1), 0px 0.8px 13px rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+        width: 100%;
+        padding: 16px;
+        @include flex(center,center);
+        flex-direction: column;
+        img{
+            width: 100%;
+            border: 6px;
+        }
+        .title{
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+        .text-field{
+            width: 100%;
+            @include flex(space-between,flex-start);
+            padding-bottom: 3px;
+            .fuel-container{
+                width: 100%;
+                gap: 4px;
+                padding-bottom: 3px;
+                @include flex(flex-end,center);
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+            .rate{
+                @include flex(flex-end, center);
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}

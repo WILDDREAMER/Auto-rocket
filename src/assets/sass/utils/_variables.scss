@@ -1,0 +1,47 @@
+$padding-horizontal: 210px;
+
+// Primary Color
+$light-grey: #f1f2f2;
+$nice-blue: #107dac;
+
+//Shadow
+$shadow-1: 2px 2px 4px 0px rgba(0, 0, 0, 0.09), -2px -2px 4px 0px rgba(0, 0, 0, 0.09);
+
+//Font sizes
+$font-size-xs: 14px;
+$font-size-sm: 15px;
+$font-size-re: 20px;
+$font-size-md: 24px;
+$font-size-lg: 30px;
+$font-size-xl: 44px;
+
+// Font Names
+$font-primary: "Poppins";
+
+//==================================//
+// Don't miss with those variabeles //
+//==================================//
+
+// Breakpoint
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Black & White
+$black: #000000;
+$white: #ffffff;
+
+//Font Path
+$font-primary-regular-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Regular.ttf";
+$font-primary-light-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Light.ttf";
+$font-primary-semi-bold-path: "../fonts/" + $font-primary + "/" + $font-primary + "-SemiBold.ttf";
+$font-primary-bold-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Bold.ttf";
+$font-primary-medium-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Medium.ttf";
+
+//Font Family
+$font-primary-regular: $font-primary + " Regular";
+$font-primary-light: $font-primary + " Light";
+$font-primary-semi-bold: $font-primary + " SemiBold";
+$font-primary-bold: $font-primary + " Bold";
+$font-primary-medium: $font-primary + " Medium";

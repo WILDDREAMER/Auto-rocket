@@ -3,30 +3,9 @@ import React, { useState } from 'react'
 import Regular from "../../assets/images/regular.svg"
 import Premium from "../../assets/images/premium.svg"
 import Diesel from "../../assets/images/diesel.svg"
-import GreenEmpty from "../../assets/images/green-empty.svg"
-import GreenFilled from "../../assets/images/green-filled.svg"
-import SafetyEmpty from "../../assets/images/safety-empty.svg"
-import SafetyFilled from "../../assets/images/safety-filled.svg"
+import rateDisplay from "./rate-display"
 
 export default function CarCard(props) {
-    const rateRange = [0, 1, 2, 3, 4];
-
-    function rateDisplay(params) {
-        return (
-            (params === "green") ?
-                <div className='rate'>
-                    {rateRange.map((value, index) => {
-                        return <img src={(props.green > index) ? GreenFilled : GreenEmpty} alt="" />
-                    })}
-                </div>
-                :
-                <div className='rate'>
-                    {rateRange.map((value, index) => {
-                        return <img src={(props.safety > index) ? SafetyFilled : SafetyEmpty} alt="" />
-                    })}
-                </div>
-        )
-    }
 
     function Type() {
         if (props.type === "premium")
@@ -74,11 +53,11 @@ export default function CarCard(props) {
                 <Type></Type>
                 <div className='text-field'>
                     <p className='infos' style={(props.dark) ? {color:'white'} : {}}>Green Rating:</p>
-                    {rateDisplay("green")}
+                    {rateDisplay("green", props)}
                 </div>
                 <div className='text-field'>
                     <p className='infos' style={(props.dark) ? {color:'white'} : {}}>Safety rating:</p>
-                    {rateDisplay("safety")}
+                    {rateDisplay("safety", props)}
                 </div>
             </div>
     )

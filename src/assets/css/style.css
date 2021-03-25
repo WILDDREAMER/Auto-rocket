@@ -421,12 +421,16 @@ h3 {
   padding-bottom: 3px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .card-list .carCard .text-field .fuel-container img {
   width: 16px;
   height: 16px;
+}
+
+.card-list .carCard .text-field .fuel-container p {
+  line-height: 100%;
 }
 
 .card-list .carCard .text-field .rate {

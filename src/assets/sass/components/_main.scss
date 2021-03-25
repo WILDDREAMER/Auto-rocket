@@ -54,10 +54,13 @@
                 width: 100%;
                 gap: 4px;
                 padding-bottom: 3px;
-                @include flex(flex-end,center);
+                @include flex(flex-end,flex-start);
                 img{
                     width: 16px;
                     height: 16px;
+                }
+                p{
+                    line-height: 100%;
                 }
             }
             .rate{

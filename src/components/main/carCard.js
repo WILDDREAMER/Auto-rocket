@@ -32,30 +32,30 @@ export default function CarCard(props) {
         if (props.type === "premium")
             return (
                 <div className='text-field' >
-                    <p className='infos'>Fuel type:</p>
+                    <p className='infos' style={(props.dark) ? {color:'white'} : {}}>Fuel type:</p>
                     <div className='fuel-container'>
                         <img src={Premium} alt="" />
-                        <p className='fuel-type'>Premium Petrol</p>
+                        <p className='fuel-type' style={(props.dark) ? {color:'white'} : {}}>Premium Petrol</p>
                     </div>
                 </div>
             )
         else if (props.type === "diesel")
             return (
                 <div className='text-field' >
-                    <p className='infos'>Fuel type:</p>
+                    <p className='infos' style={(props.dark) ? {color:'white'} : {}}>Fuel type:</p>
                     <div className='fuel-container'>
                         <img src={Diesel} alt="" />
-                        <p className='fuel-type'>Diesel</p>
+                        <p className='fuel-type' style={(props.dark) ? {color:'white'} : {}}>Diesel</p>
                     </div>
                 </div>
             )
         else if (props.type === "regular")
             return (
                 <div className='text-field' >
-                    <p className='infos'>Fuel type:</p>
+                    <p className='infos' style={(props.dark) ? {color:'white'} : {}}>Fuel type:</p>
                     <div className='fuel-container'>
                         <img src={Regular} alt="" />
-                        <p className='fuel-type'>Regular Petrol</p>
+                        <p className='fuel-type' style={(props.dark) ? {color:'white'} : {}}>Regular Petrol</p>
                     </div>
                 </div>
             )
@@ -65,19 +65,19 @@ export default function CarCard(props) {
     }
 
     return (
-            <div className='carCard'>
+            <div className='carCard'  style={(props.dark) ? {background:'#323338'} : {}}>
                 <img src={props.img} alt="" />
                 <div className='text-field title'>
-                    <p className='car-name'>{props.name}</p>
-                    <p className='price'>${props.price}</p>
+                    <p className='car-name' style={(props.dark) ? {color:'white'} : {}}>{props.name}</p>
+                    <p className='price' >${props.price}</p>
                 </div>
                 <Type></Type>
                 <div className='text-field'>
-                    <p className='infos'>Green Rating:</p>
+                    <p className='infos' style={(props.dark) ? {color:'white'} : {}}>Green Rating:</p>
                     {rateDisplay("green")}
                 </div>
                 <div className='text-field'>
-                    <p className='infos'>Safety rating:</p>
+                    <p className='infos' style={(props.dark) ? {color:'white'} : {}}>Safety rating:</p>
                     {rateDisplay("safety")}
                 </div>
             </div>

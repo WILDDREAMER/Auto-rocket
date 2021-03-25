@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/assets/css/style.css';
 import MultipleVehicles from "../src/components/main/"
 

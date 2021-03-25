@@ -239,7 +239,7 @@ a:active {
 h1 {
   flex-grow: 0;
   font-family: "Poppins SemiBold";
-  font-size: 26px;
+  font-size: 26px !important;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -252,7 +252,7 @@ h1 {
 h2 {
   flex-grow: 0;
   font-family: "Poppins Medium";
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -310,6 +310,11 @@ p.infos {
   letter-spacing: -0.17px;
   text-align: left;
   color: #000000;
+}
+
+p.infos.footer {
+  text-align: center;
+  width: 100%;
 }
 
 p.fuel-type {
@@ -372,12 +377,12 @@ h3 {
 
 .card-list {
   padding: 24px;
-  background-color: #EFF2F5;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 16px;
+  background-color: #EFF2F5;
 }
 
 .card-list .carCard {
@@ -437,5 +442,26 @@ h3 {
 
 footer {
   background-color: #EFF2F5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer input {
+  margin-top: 24px;
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: solid;
+  color: black;
+  box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
+}
+
+footer .btn {
+  width: 100%;
+  margin-top: 12px;
+  box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
 }
 /*# sourceMappingURL=style.css.map */

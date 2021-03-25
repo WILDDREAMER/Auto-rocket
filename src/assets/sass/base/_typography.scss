@@ -24,7 +24,7 @@ a {
 h1 {
 	flex-grow: 0;
 	font-family: $font-primary-semi-bold;
-	font-size: 26px;
+	font-size: 26px !important;
 	font-weight: 600;
 	font-stretch: normal;
 	font-style: normal;
@@ -36,7 +36,7 @@ h1 {
 h2{
 	flex-grow: 0;
 	font-family: $font-primary-medium;
-	font-size: 16px;
+	font-size: 16px !important;
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
@@ -93,6 +93,11 @@ p{
 		letter-spacing: -0.17px;
 		text-align: left;
 		color: #000000;
+		&.footer{
+			// font-family: $font-primary-semi-bold;
+			text-align: center;
+			width: 100%;
+		}
 	}
 	&.fuel-type{
 		font-family: $font-primary-semi-bold;

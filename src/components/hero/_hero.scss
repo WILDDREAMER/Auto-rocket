@@ -1,8 +1,10 @@
-.text{
-    padding: 24px;
-    @include flex(center,center);
-    flex-direction: column;
-    span{
-        font-family: $font-primary-semi-bold;
+.body{
+    .text{
+        padding: 24px;
+        @include flex(center,center);
+        flex-direction: column;
+        span{
+            font-family: $font-primary-semi-bold;
+        }
     }
 }

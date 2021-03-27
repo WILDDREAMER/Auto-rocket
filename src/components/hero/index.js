@@ -1,15 +1,17 @@
-import { colors } from "../../data/list"
+import { colors, text, listBackground } from "../../data/list"
 
 export default function Hero(props) {
-    const darkStyling = { color: colors.textDark };
-    const lightStyling = { color: colors.textLigh };
+    const blendMode = (listBackground) ? { mixBlendMode: "hard-light" } : {};
+
+    const darkStyling = { ...{color: colors.textDark}, ...blendMode  };
+    const lightStyling = { ...{color: colors.textLigh }, ...blendMode };
 
     return (
-        <div className='body' style={(props.dark) ? { background: '#1F2024' } : {}}>
+        <div className='body' style={(props.dark) ? { background: 'transparent' } : {}}>
             <div className='text'>
-                <h1 style={(props.dark) ? darkStyling : lightStyling}>Special list for you!</h1>
-                <h2 style={(props.dark) ? darkStyling : lightStyling}>Carefully curated list of cars for you</h2>
-                <p className='List-expires'>List expires in: <span>22h 32min</span></p>
+                <h1 style={(props.dark) ? darkStyling : lightStyling}>{text.hero.title}</h1>
+                <h2 style={(props.dark) ? darkStyling : lightStyling}>{text.hero.subtitle}</h2>
+                <p className='List-expires'>{text.hero.countdown}<span>22h 32min</span></p>
             </div>
         </div>
     )

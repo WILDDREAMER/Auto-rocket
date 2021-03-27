@@ -24,7 +24,7 @@ a {
 h1 {
 	flex-grow: 0;
 	font-family: $font-primary-semi-bold;
-	font-size: 26px !important;
+	font-size: 28px !important;
 	font-weight: 600;
 	font-stretch: normal;
 	font-style: normal;
@@ -35,7 +35,7 @@ h1 {
 h2{
 	flex-grow: 0;
 	font-family: $font-primary-medium;
-	font-size: 16px !important;
+	font-size: 18px !important;
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
@@ -44,24 +44,11 @@ h2{
 	text-align: center;
 	color: #0c1a27;
 }
-
 p{
-	&.car-name {
-		font-family: $font-primary-bold;
-		font-size: 19px;
-		font-weight: bold;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: -0.69px;
-		text-align: left;
-		color: #0d1a27;
-	}
-	  
 	&.List-expires {
 		flex-grow: 0;
 		font-family: $font-primary-medium;
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: 500;
 		font-stretch: normal;
 		font-style: normal;
@@ -70,47 +57,63 @@ p{
 		text-align: center;
 		color: #6f7b88;
 	}
-	&.price{
-		font-family: $font-primary-semi-bold;
-		font-size: 21px;
-		font-weight: 600;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: -0.46px;
-		text-align: right;
-		color: #286df1;
-	}
 	&.infos{
-		width: 100%;
-		font-family: $font-primary-regular;
-		font-size: 17px;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: -0.17px;
-		text-align: left;
-		color: #000000;
 		&.footer{
-			// font-family: $font-primary-semi-bold;
 			text-align: center;
 			width: 100%;
 		}
 	}
-	&.fuel-type{
-		font-family: $font-primary-semi-bold;
-		font-size: 16px;
-		font-weight: 600;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: -0.32px;
-		text-align: right;
-		color: #000000;
+}
+.card{
+	p{
+		&.title {
+			font-family: $font-primary-bold;
+			font-size: 23px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: -0.69px;
+			text-align: left;
+			color: #0d1a27;
+		}
+		&.subtitle{
+			font-family: $font-primary-semi-bold;
+			font-size: 23px;
+			font-weight: 600;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: -0.46px;
+			text-align: right;
+			color: #286df1;
+		}
+		&.infos{
+			width: 100%;
+			font-family: $font-primary-regular;
+			font-size: 17px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: -0.17px;
+			text-align: left;
+			color: #000000;
+		}
+		&.fuel-type{
+			font-family: $font-primary-semi-bold;
+			font-size: 16px;
+			font-weight: 600;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: -0.32px;
+			text-align: right;
+			color: #000000;
+		}
+		
 	}
 }
-
 h3 {
   font-family: $font-primary-bold;
   font-size: 23px;
@@ -122,6 +125,33 @@ h3 {
   text-align: left;
   color: #0d1a27;
 }
+
+.missions{
+	.title{
+		width: 271px;
+		font-family: $font-primary-bold;
+		font-size: 23px;
+		font-stretch: normal;
+		font-style: normal;
+		letter-spacing: -0.46px;
+		text-align: center;
+		margin: 0;
+	}
+	.subtitle{
+		width: 302px;
+		height: 30px;
+		font-family: $font-primary-medium;
+		font-size: 18px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.67;
+		letter-spacing: normal;
+		text-align: center;
+		color: #1d1b19;
+	}
+}
+
 // How typogrraphy should looks like on mobile version
 @include for-size(desktop-down) {
 }

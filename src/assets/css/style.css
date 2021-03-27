@@ -239,7 +239,7 @@ a:active {
 h1 {
   flex-grow: 0;
   font-family: "Poppins SemiBold";
-  font-size: 26px !important;
+  font-size: 28px !important;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -251,7 +251,7 @@ h1 {
 h2 {
   flex-grow: 0;
   font-family: "Poppins Medium";
-  font-size: 16px !important;
+  font-size: 18px !important;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -261,22 +261,10 @@ h2 {
   color: #0c1a27;
 }
 
-p.car-name {
-  font-family: "Poppins Bold";
-  font-size: 19px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.69px;
-  text-align: left;
-  color: #0d1a27;
-}
-
 p.List-expires {
   flex-grow: 0;
   font-family: "Poppins Medium";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -286,9 +274,26 @@ p.List-expires {
   color: #6f7b88;
 }
 
-p.price {
+p.infos.footer {
+  text-align: center;
+  width: 100%;
+}
+
+.card p.title {
+  font-family: "Poppins Bold";
+  font-size: 23px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.69px;
+  text-align: left;
+  color: #0d1a27;
+}
+
+.card p.subtitle {
   font-family: "Poppins SemiBold";
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -298,7 +303,7 @@ p.price {
   color: #286df1;
 }
 
-p.infos {
+.card p.infos {
   width: 100%;
   font-family: "Poppins Regular";
   font-size: 17px;
@@ -311,12 +316,7 @@ p.infos {
   color: #000000;
 }
 
-p.infos.footer {
-  text-align: center;
-  width: 100%;
-}
-
-p.fuel-type {
+.card p.fuel-type {
   font-family: "Poppins SemiBold";
   font-size: 16px;
   font-weight: 600;
@@ -340,7 +340,32 @@ h3 {
   color: #0d1a27;
 }
 
-.text {
+.missions .title {
+  width: 271px;
+  font-family: "Poppins Bold";
+  font-size: 23px;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.46px;
+  text-align: center;
+  margin: 0;
+}
+
+.missions .subtitle {
+  width: 302px;
+  height: 30px;
+  font-family: "Poppins Medium";
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1d1b19;
+}
+
+.body .text {
   padding: 24px;
   display: flex;
   justify-content: center;
@@ -348,7 +373,7 @@ h3 {
   flex-direction: column;
 }
 
-.text span {
+.body .text span {
   font-family: "Poppins SemiBold";
 }
 
@@ -359,12 +384,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-footer .btn {
-  width: 100%;
-  margin-top: 12px;
-  box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
+  padding-bottom: 24px;
 }
 
 .card-list {
@@ -374,11 +394,12 @@ footer .btn {
   align-items: center;
   flex-direction: column;
   gap: 16px;
+  background-repeat: no-repeat !important;
+  background-size: 100% !important;
 }
 
-.card-list .carCard {
+.card-list .card {
   box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.1), 0px 0.8px 13px rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
   width: 100%;
   padding: 16px;
   display: flex;
@@ -387,17 +408,17 @@ footer .btn {
   flex-direction: column;
 }
 
-.card-list .carCard img {
+.card-list .card img {
   width: 100%;
   border: 6px;
 }
 
-.card-list .carCard .title {
+.card-list .card .title {
   padding-top: 10px;
   margin-bottom: 10px;
 }
 
-.card-list .carCard .text-field {
+.card-list .card .text-field {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -405,7 +426,7 @@ footer .btn {
   padding-bottom: 3px;
 }
 
-.card-list .carCard .text-field .fuel-container {
+.card-list .card .text-field .fuel-container {
   width: 100%;
   gap: 4px;
   padding-bottom: 3px;
@@ -414,22 +435,22 @@ footer .btn {
   align-items: flex-start;
 }
 
-.card-list .carCard .text-field .fuel-container img {
+.card-list .card .text-field .fuel-container img {
   width: 16px;
   height: 16px;
 }
 
-.card-list .carCard .text-field .fuel-container p {
+.card-list .card .text-field .fuel-container p {
   line-height: 100%;
 }
 
-.card-list .carCard .text-field .rate {
+.card-list .card .text-field .rate {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.card-list .carCard .text-field .rate img {
+.card-list .card .text-field .rate img {
   width: 16px;
   height: 16px;
 }
@@ -456,5 +477,24 @@ input {
   border: solid;
   font-family: "Poppins Regular";
   box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
+}
+
+.missions {
+  width: 100%;
+  gap: 16px;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding-bottom: 10px;
+  width: 100%;
+  margin-top: 12px;
+  box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

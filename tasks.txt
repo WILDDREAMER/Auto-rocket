@@ -1,7 +1,13 @@
-- use variables
-- expire countdown
-- fix hero background
+- fix font sizes +
+- use variables +
+- store texts +
+- add padding to footer +
+- component Missions +
+- fix hero background +
+- detect mode(dark/light) +
+= toggle ,ode quto,qticqlly
 - background image
+- expire countdown
 - multiple languages
-- detect mode(dark/light)
 - react router
+- 

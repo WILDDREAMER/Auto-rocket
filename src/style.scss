@@ -1,0 +1,15 @@
+@import "./assets/sass/utils/variables";
+@import "./assets/sass/utils/functions";
+@import "./assets/sass/utils/mixins";
+@import "./assets/sass/utils/helpers";
+// 3 - Base;
+@import "./assets/sass/base/reset";
+@import "./assets/sass/base/typography";
+
+// 4 - Components;
+@import "./components/hero/hero";
+@import "./components/footer/footer";
+@import "./components/card/card";
+@import "./components/topBar/topBar";
+@import "./components/input/input";
+// 5 - Layout;

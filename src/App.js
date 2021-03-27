@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/assets/css/style.css';
-import MultipleVehicles from "../src/components/main/"
+import List from "../src/pages/list/"
 
 function App() {
   return (
-    <MultipleVehicles/>
+    <List/>
   );
 }
 

@@ -1,0 +1,7 @@
+- use variables
+- expire countdown
+- fix hero background
+- background image
+- multiple languages
+- detect mode(dark/light)
+- react router

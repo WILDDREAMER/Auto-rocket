@@ -1,0 +1,11 @@
+.tileCardList{
+    width: 100%;
+    @include flex(center,center);
+    gap: 16px;
+    .left, .right{
+        @include flex(flex-start, stretch);
+        flex-direction: column;
+        gap: 16px;
+        width: 50%;
+    }
+}

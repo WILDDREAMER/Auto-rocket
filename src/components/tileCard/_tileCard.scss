@@ -1,0 +1,27 @@
+.tileCardList{
+    .tileCard{
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .text{
+            padding: 12px;
+            .title{
+                margin-bottom: 31px;
+            }
+            .year{
+                font-size: 14px;
+            }
+            .button{
+                background: transparent;
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                bottom: 15px;
+                right: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+}

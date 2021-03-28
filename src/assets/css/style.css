@@ -219,6 +219,16 @@ textarea {
   src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "IBMPlexSans Bold";
+  src: url("../fonts/IBMPlexSans/IBMPlexSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSans Medium";
+  src: url("../fonts/IBMPlexSans/IBMPlexSans-Medium.ttf") format("truetype");
+}
+
 /*=== Typography Styling ===*/
 a:link {
   text-decoration: none;
@@ -328,6 +338,43 @@ p.infos.footer {
   color: #000000;
 }
 
+p .takeSurvey {
+  font-family: "Poppins Medium";
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fa9268;
+}
+
+.tileCard .title {
+  font-family: "IBMPlexSans Bold";
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.04;
+  letter-spacing: -0.48px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.tileCard .subtitle {
+  opacity: 0.75;
+  font-family: "IBMPlexSans Medium";
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: -0.32px;
+  text-align: left;
+  color: #ffffff;
+}
+
 h3 {
   font-family: "Poppins Bold";
   font-size: 23px;
@@ -363,6 +410,17 @@ h3 {
   letter-spacing: normal;
   text-align: center;
   color: #1d1b19;
+}
+
+.takeTheSurvey {
+  font-family: "IBMPlexSans Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+p {
+  margin: 0;
 }
 
 .body .text {
@@ -496,5 +554,62 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tileCardList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.tileCardList .left, .tileCardList .right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+
+.tileCardList .tileCard {
+  overflow: hidden;
+  position: relative;
+}
+
+.tileCardList .tileCard img {
+  width: 100%;
+}
+
+.tileCardList .tileCard .text {
+  padding: 12px;
+}
+
+.tileCardList .tileCard .text .title {
+  margin-bottom: 31px;
+}
+
+.tileCardList .tileCard .text .year {
+  font-size: 14px;
+}
+
+.tileCardList .tileCard .text .button {
+  background: transparent;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 15px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.takeTheSurvey {
+  width: 100%;
+  border: 2px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
 }
 /*# sourceMappingURL=style.css.map */

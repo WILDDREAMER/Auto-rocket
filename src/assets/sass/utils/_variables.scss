@@ -11,6 +11,7 @@ $font-size-xl: 32px;
 
 // Font Names
 $font-primary: "Poppins";
+$font-secondary: "IBMPlexSans";
 
 //==================================//
 // Don't miss with those variabeles //
@@ -39,3 +40,11 @@ $font-primary-light: $font-primary + " Light";
 $font-primary-semi-bold: $font-primary + " SemiBold";
 $font-primary-bold: $font-primary + " Bold";
 $font-primary-medium: $font-primary + " Medium";
+
+//secondary Font
+$font-secondary-bold-path: "../fonts/" + $font-secondary + "/" + $font-secondary + "-Bold.ttf";
+$font-secondary-medium-path: "../fonts/" + $font-secondary + "/" + $font-secondary + "-Medium.ttf";
+
+//Font Family Secondary 
+$font-secondary-bold: $font-secondary + " Bold";
+$font-secondary-medium: $font-secondary + " Medium";

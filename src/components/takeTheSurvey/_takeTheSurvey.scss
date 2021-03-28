@@ -1,0 +1,6 @@
+.takeTheSurvey{
+    width: 100%;
+    border: 2px solid;
+    @include flex(space-between, center);
+    padding: 12px;
+}

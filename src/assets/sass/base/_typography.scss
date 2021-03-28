@@ -4,6 +4,9 @@
 @include font-face($font-primary-bold, $font-primary-bold-path);
 @include font-face($font-primary-medium, $font-primary-medium-path);
 
+@include font-face($font-secondary-bold, $font-secondary-bold-path);
+@include font-face($font-secondary-medium, $font-secondary-medium-path);
+
 /*=== Typography Styling ===*/
 
 a {
@@ -111,9 +114,49 @@ p{
 			text-align: right;
 			color: #000000;
 		}
-		
 	}
 }
+
+p {
+	.takeSurvey{
+		font-family: $font-primary-medium;
+		font-size: 15px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #fa9268;
+	}
+}
+
+.tileCard{
+	.title{
+		font-family: $font-secondary-bold;
+		font-size: 24px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.04;
+		letter-spacing: -0.48px;
+		text-align: left;
+		color: #ffffff;
+	}
+	.subtitle{
+		opacity: 0.75;
+		font-family: $font-secondary-medium;
+		font-size: 16px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.38;
+		letter-spacing: -0.32px;
+		text-align: left;
+		color: #ffffff;
+	}
+}
+
 h3 {
   font-family: $font-primary-bold;
   font-size: 23px;
@@ -152,6 +195,12 @@ h3 {
 	}
 }
 
+.takeTheSurvey{
+	font-family: $font-secondary-medium;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;	
+}
 // How typogrraphy should looks like on mobile version
 @include for-size(desktop-down) {
 }
@@ -160,4 +209,7 @@ h3 {
 @include for-size(tablet-portrait-down) {
 }
 @include for-size(phone-only) {
+}
+p{
+	margin: 0;
 }

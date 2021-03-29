@@ -16,6 +16,7 @@ export const colors = {
     textLight: "#0c1a27",
     missions: '#FFC043'
 }
+export const listExpireDate = new Date("Jul 5, 2022 15:37:25").getTime();
 
 //fill this variable if you have a background image 
 //(example: backgroundImage:` url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80")`)

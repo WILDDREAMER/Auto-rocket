@@ -1,4 +1,4 @@
-import { colors, text, listBackground } from "../../data/list"
+import { colors, text, listBackground, listExpireDate } from "../../data/list"
 
 export default function Hero(props) {
     const blendMode = (listBackground) ? { mixBlendMode: "hard-light" } : {};

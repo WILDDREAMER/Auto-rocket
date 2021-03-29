@@ -181,8 +181,6 @@ h3 {
 		margin: 0;
 	}
 	.subtitle{
-		width: 302px;
-		height: 30px;
 		font-family: $font-primary-medium;
 		font-size: 18px;
 		font-weight: 500;
@@ -194,7 +192,14 @@ h3 {
 		color: #1d1b19;
 	}
 }
-
+.rewardsCounter{
+	font-family: $font-primary-semi-bold;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 15px;
+	letter-spacing: -0.01em;
+}
 .takeTheSurvey{
 	font-family: $font-secondary-medium;
 	font-style: normal;

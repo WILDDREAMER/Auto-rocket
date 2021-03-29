@@ -1,12 +1,16 @@
 import TileCardList from "../../components/tileCardList";
 import Survey from '../../components/takeTheSurvey/';
 import HeroTiles from "../../components/heroTiles";
-export default function Tiles(params) {
+import TopBar from "../../components/topBar";
+export default function Tiles({ dark }) {
     return (
-        <div className='card-list' >
-            <HeroTiles></HeroTiles>
-            <TileCardList></TileCardList>
-            <Survey></Survey>
+        <div className='tilesContainer'>
+            <TopBar dark={dark}></TopBar>
+            <div className='card-list tiles' >
+                <HeroTiles dark={dark}></HeroTiles>
+                <TileCardList dark={dark}></TileCardList>
+                <Survey dark={dark}></Survey>
+            </div>
         </div>
     )
 }

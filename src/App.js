@@ -1,19 +1,40 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/assets/css/style.css';
-import List from "../src/pages/list/"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 import { Mode, useLightSwitch } from 'use-light-switch'
-import {colors, listBackground} from "./data/list"
+import { colors, listBackground } from "./data/list"
 import Tiles from './pages/tiles/';
+import List from './pages/list/';
 
 function App() {
-  const [dark, setDark] = useState((useLightSwitch() === Mode.Dark) ? true : false);
-  const listStyleDark = {...{backgroundColor:colors.secondaryDark}, ...listBackground};
-  const listStyleLight = {...{backgroundColor:colors.secondaryLight}, ...listBackground};
+  const currentMode = (useLightSwitch() === Mode.Dark) ? true : false;
+  const [dark, setDark] = useState(currentMode);
+  useEffect(() => {
+    setDark(() => {setDark(currentMode)})
+  }, [currentMode])
+  const listStyleDark = { ...{ backgroundColor: colors.secondaryDark }, ...listBackground };
+  const listStyleLight = { ...{ backgroundColor: colors.secondaryLight }, ...listBackground };
 
   return (
     <div style={(dark) ? listStyleDark : listStyleLight}>
-      <Tiles dark={dark}></Tiles>
+      <Router>
+
+        <div>
+          <Switch>
+            <Route path="/list">
+              <List dark={dark}></List>
+            </Route>
+            <Route path="/tiles">
+              <Tiles dark={dark}></Tiles>
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }

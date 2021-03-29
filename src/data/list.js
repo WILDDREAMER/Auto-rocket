@@ -5,6 +5,7 @@ import LogoLight from "../assets/images/Logo.svg"
 import LogoDark from "../assets/images/LogoDark.svg"
 import rewardsIcon from "../assets/images/rewardsIcon.svg"
 import arrow from "../assets/images/arrowRight.svg"
+import Rewards from '../components/rewardsCounter/'
 
 export const colors = {
     primaryDark: '#323338',
@@ -19,6 +20,10 @@ export const colors = {
 //fill this variable if you have a background image 
 //(example: backgroundImage:` url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80")`)
 export const listBackground = {};
+
+export const Reward = Rewards;
+// case 2:
+// export const Reward = null;
 
 export const radius = "3px";
 

@@ -28,8 +28,6 @@ body {
 .container {
   width: 100%;
   max-width: 1440px;
-  padding-left: 7%;
-  padding-right: 7%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -399,8 +397,6 @@ h3 {
 }
 
 .missions .subtitle {
-  width: 302px;
-  height: 30px;
   font-family: "Poppins Medium";
   font-size: 18px;
   font-weight: 500;
@@ -410,6 +406,15 @@ h3 {
   letter-spacing: normal;
   text-align: center;
   color: #1d1b19;
+}
+
+.rewardsCounter {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: -0.01em;
 }
 
 .takeTheSurvey {
@@ -423,7 +428,7 @@ p {
   margin: 0;
 }
 
-.body .text {
+.hero .text {
   padding: 24px;
   display: flex;
   justify-content: center;
@@ -431,7 +436,7 @@ p {
   flex-direction: column;
 }
 
-.body .text span {
+.hero .text span {
   font-family: "Poppins SemiBold";
 }
 
@@ -513,18 +518,33 @@ footer {
   height: 16px;
 }
 
-.logo {
+.topBar {
   width: 100%;
   height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
   box-shadow: 0px 9px 80px rgba(0, 0, 0, 0.07), 0px 1.8px 13px rgba(0, 0, 0, 0.035);
 }
 
-.logo img {
+.topBar img {
   width: 182px;
   height: 100%;
+}
+
+.topBar .rewardsCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: #BC8A2B;
+}
+
+.topBar .rewardsCounter img {
+  width: 24px;
+  height: 24px;
 }
 
 input {
@@ -611,5 +631,16 @@ input {
   justify-content: space-between;
   align-items: center;
   padding: 12px;
+}
+
+.hero.heroTiles {
+  width: 100%;
+}
+
+.hero.heroTiles .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,9 @@
+.hero{
+    &.heroTiles{
+        width: 100%;
+        .text{
+            @include flex(flex-start,flex-start);
+            width: 100%;
+        }
+    }
+}

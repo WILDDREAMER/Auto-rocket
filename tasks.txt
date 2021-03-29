@@ -5,9 +5,10 @@
 - component Missions +
 - fix hero background +
 - detect mode(dark/light) +
-= toggle ,ode quto,qticqlly
-- background image
-- expire countdown
+- background image +
+- tiles +
+- toggle mode automatically +
+- react router +
+- expire countdown 
 - multiple languages
-- react router
 - 

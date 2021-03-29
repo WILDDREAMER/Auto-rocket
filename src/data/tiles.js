@@ -43,7 +43,7 @@ export const articles = [
 ]
 
 export const text = {
-    hero:{
+    hero: {
         title: 'Special list for you!',
         subtitle: 'Carefully curated list of cars for you',
     },

@@ -7,7 +7,7 @@ export default function Hero(props) {
     const lightStyling = { ...{color: colors.textLigh }, ...blendMode };
 
     return (
-        <div className='body' style={(props.dark) ? { background: 'transparent' } : {}}>
+        <div className='hero' style={(props.dark) ? { background: 'transparent' } : {}}>
             <div className='text'>
                 <h1 style={(props.dark) ? darkStyling : lightStyling}>{text.hero.title}</h1>
                 <h2 style={(props.dark) ? darkStyling : lightStyling}>{text.hero.subtitle}</h2>

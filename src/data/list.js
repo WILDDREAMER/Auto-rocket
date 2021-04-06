@@ -58,8 +58,8 @@ export const cars = [
         title: "Volswagen Golf",
         subtitle: "15,000",
         fuel: "premium",
-        green: 4,
-        safety: 4
+        green: 1,
+        safety: 5
     },
     {
         img: Peugeot,

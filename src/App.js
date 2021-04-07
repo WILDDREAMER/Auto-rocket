@@ -10,6 +10,7 @@ import { Mode, useLightSwitch } from 'use-light-switch'
 import { colors, listBackground } from "./data/list"
 import Tiles from './pages/tiles/';
 import List from './pages/list/';
+import Aftermarket from './pages/aftermarket';
 
 function App() {
   const currentMode = (useLightSwitch() === Mode.Dark) ? true : false;
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route path="/tiles">
               <Tiles dark={dark}></Tiles>
+            </Route>
+            <Route path="/aftermarket">
+              <Aftermarket></Aftermarket>
             </Route>
           </Switch>
         </div>

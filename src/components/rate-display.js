@@ -1,7 +1,7 @@
-import GreenEmpty from "../assets/images/green-empty.svg"
-import GreenFilled from "../assets/images/green-filled.svg"
-import SafetyEmpty from "../assets/images/safety-empty.svg"
-import SafetyFilled from "../assets/images/safety-filled.svg"
+import GreenEmpty from "../data/images/green-empty.svg"
+import GreenFilled from "../data/images/green-filled.svg"
+import SafetyEmpty from "../data/images/safety-empty.svg"
+import SafetyFilled from "../data/images/safety-filled.svg"
 
 export default function rateDisplay(params, props) {
     const rateRange = [0, 1, 2, 3, 4];

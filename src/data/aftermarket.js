@@ -15,13 +15,16 @@ export const colors = {
         background: '#edf0f3',
     }
 }
-
+export const radius = '16px';
 export const categories = {
-    filter: {
+    filter: { 
+        imgShadow: 'drop-shadow(0px 78px 80px rgba(0, 0, 0, 0.25)) drop-shadow(0px 45.9264px 41.728px rgba(0, 0, 0, 0.1808)) drop-shadow(0px 23.5872px 19.584px rgba(0, 0, 0, 0.1404)) drop-shadow(0px 9.4848px 8.576px rgba(0, 0, 0, 0.1096)) drop-shadow(0px 2.1216px 3.712px rgba(0, 0, 0, 0.0692))',
+        imgPosition:{top: '-28px', left: '17px'},
         image: oilFilter,
         color: '#EBBF5E',
-        title: {color: '#1D1E22', text: 'Oil Filter'},
-        subTitle: {color: '#1E1F22', text: 'Starts from'},
+        textColor: '#1D1E22',
+        title: 'Oil Filter',
+        subTitle: 'Starts from',
         tags: ["tag1", "tag2", "tag3"],
         price: 59.99,
         products: [
@@ -66,46 +69,59 @@ export const categories = {
         ]
     },
     brake: {
+        imgPosition:{top: '-23px', left: '31px'},
+        imgShadow: 'drop-shadow(0px 54px 51px rgba(0, 0, 0, 0.43)) drop-shadow(0px 10.8px 8.2875px rgba(0, 0, 0, 0.215))',
         image: brake,
         color: '#9C170D',
-        title: {color: '#FFFFFF', text: 'Brake Pads'},
-        subTitle: {color: '#FFFFFF', text: 'Starts from'},
+        textColor: '#FFFFFF',
+        title: 'Brake Pads',
+        subTitle:'Starts from',
         tags: ["tag1", "tag2", "tag3"],
         price: 59.99,
         products: []
     },
     soundSystems: {
+        imgPosition:{top: '-15px', left: '-11px'},
         image: speakers,
         color: '#F69058',
-        title: {color: '#1D1E22', text: 'Sound Systems'},
-        subTitle: {color: '#1E1F22', text: 'Starts from'},
+        textColor: '#1D1E22',
+        title:  'Sound Systems',
+        subTitle: 'Starts from',
         tags: ["tag1", "tag2", "tag3"],
         price: 59.99,
         products: []
     },
     wheels: {
+        imgPosition:{top: '-20px', left: '4px'},
         image: wheel,
         color: '#C5C3BC',
-        title: {color: '#1D1E22', text: 'Tires & Wheels'},
-        subTitle: {color: '#1E1F22', text: 'Starts from'},
+        textColor: '#1D1E22',
+        title:  'Tires & Wheels',
+        subTitle: 'Starts from',
         tags: ["tag1", "tag2", "tag3"],
         price: 59.99,
         products: []
     },
     floor: {
+        imgPosition:{top: '-18px', left: '4.5px'},
+        imgShadow: 'drop-shadow(0px 78px 80px rgba(0, 0, 0, 0.25)) drop-shadow(0px 45.9264px 41.728px rgba(0, 0, 0, 0.1808)) drop-shadow(0px 23.5872px 19.584px rgba(0, 0, 0, 0.1404)) drop-shadow(0px 9.4848px 8.576px rgba(0, 0, 0, 0.1096)) drop-shadow(0px 2.1216px 3.712px rgba(0, 0, 0, 0.0692))',
         image: floorMats,
         color: '#B7BFC5',
-        title: {color: '#1D1E22', text: 'Floor Mats'},
-        subTitle: {color: '#1E1F22', text: 'Starts from'},
+        textColor: '#1D1E22',
+        title:  'Floor Mats',
+        subTitle: 'Starts from',
         tags: ["tag1", "tag2", "tag3"],
         price: 59.99,
         products: []
     },
     headlights: {
+        imgPosition:{top: '-20px', left: '0px'},
+        imgShadow: 'drop-shadow(0px 54px 51px rgba(0, 0, 0, 0.43)) drop-shadow(0px 10.8px 8.2875px rgba(0, 0, 0, 0.215))',
         image: headLights,
         color: '#F27607',
-        title: {color: '#1D1E22', text: 'Headlights'},
-        subTitle: {color: '#1E1F22', text: 'Starts from'},
+        textColor: '#1D1E22',
+        title:  'Headlights',
+        subTitle: 'Starts from',
         tags: ["tag1", "tag2", "tag3"],
         price: 59.99,
         products: []

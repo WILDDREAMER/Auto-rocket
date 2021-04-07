@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-import rewardsIcon from "../../assets/images/rewardGold.svg"
-
+import rewardsIcon from '../../data/images/rewardGold.svg'
 
 export default function RewardsCounter(props) {
     const [ rewards, setRewards] = useState(10);

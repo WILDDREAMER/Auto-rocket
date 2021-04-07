@@ -1,5 +1,5 @@
 import {theSurvey, radius} from '../../data/tiles'
-import arrowThick from '../../assets/images/arrowThickOrange.svg'
+import arrowThick from '../../data/images/arrowThickOrange.svg'
 
 export default function TakeTheSurvey(props) {
     return (

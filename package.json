@@ -10,6 +10,7 @@
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
+    "react-css-filter": "^1.0.4",
     "react-date-countdown-timer": "^1.0.9",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",

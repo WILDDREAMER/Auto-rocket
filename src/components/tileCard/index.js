@@ -1,5 +1,5 @@
 import Button from "../button/"
-import arrow from "../../assets/images/arrowThick.svg"
+import arrow from "../../data/images/arrowThick.svg"
 import {radius} from "../../data/tiles"
 export default function TileCard(props) {
     return (

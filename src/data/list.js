@@ -1,10 +1,10 @@
-import Volswagen from "../assets/images/volswagen.svg"
-import Mazda from "../assets/images/mazda.svg"
-import Peugeot from "../assets/images/peugeot.svg"
-import LogoLight from "../assets/images/Logo.svg"
-import LogoDark from "../assets/images/LogoDark.svg"
-import rewardsIcon from "../assets/images/rewardsIcon.svg"
-import arrow from "../assets/images/arrowRight.svg"
+import Volswagen from "./images/volswagen.svg"
+import Mazda from "./images/mazda.svg"
+import Peugeot from "./images/peugeot.svg"
+import LogoLight from "./images/Logo.svg"
+import LogoDark from "./images/LogoDark.svg"
+import rewardsIcon from "./images/rewardsIcon.svg"
+import arrow from "./images/arrowRight.svg"
 import Rewards from '../components/rewardsCounter/'
 
 export const colors = {

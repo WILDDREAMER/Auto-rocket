@@ -11,4 +11,6 @@
 - react router +
 - expire countdown 
 - multiple languages
+- fix missions component
+- create category card
 - 

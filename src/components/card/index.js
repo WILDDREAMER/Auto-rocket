@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Regular from "../../assets/images/regular.svg"
-import Premium from "../../assets/images/premium.svg"
-import Diesel from "../../assets/images/diesel.svg"
+import Regular from "../../data/images/regular.svg"
+import Premium from "../../data/images/premium.svg"
+import Diesel from "../../data/images/diesel.svg"
 import rateDisplay from "../rate-display"
 
 import { colors, text, radius } from "../../data/list"

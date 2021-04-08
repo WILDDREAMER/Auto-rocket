@@ -5,11 +5,12 @@ import Premium from "../../data/images/premium.svg"
 import Diesel from "../../data/images/diesel.svg"
 import rateDisplay from "../rate-display"
 
-import { colors, text, radius } from "../../data/list"
+import { colors, text } from "../../data/list"
+import { radius } from "../../data/global"
 
 export default function CarCard(props) {
     const textStyling = (props.dark) ? { color: colors.textDark } : { color: colors.textLigh };
-    const cardListStyling = (props.dark) ? { background: '#323338' , borderRadius: radius } :  { color: colors.textLigh, borderRadius: radius };
+    const cardListStyling = (props.dark) ? { background: '#323338', borderRadius: radius } : { color: colors.textLigh, borderRadius: radius };
 
     function Type() {
         if (props.type === "premium")

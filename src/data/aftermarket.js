@@ -7,20 +7,13 @@ import floorMats from './images/floorMats.svg'
 import headLights from './images/headlights.svg'
 import wheel from './images/wheel.svg'
 
-export const colors = {
-    dark: {
-        background: '#1f2024',
-    },
-    light: {
-        background: '#edf0f3',
-    }
-}
-export const radius = '16px';
 export const categories = {
-    filter: { 
+    filter: {
+        titleMargin: '28px',
+        paddingTop: '123px', 
+        image: oilFilter,
         imgShadow: 'drop-shadow(0px 78px 80px rgba(0, 0, 0, 0.25)) drop-shadow(0px 45.9264px 41.728px rgba(0, 0, 0, 0.1808)) drop-shadow(0px 23.5872px 19.584px rgba(0, 0, 0, 0.1404)) drop-shadow(0px 9.4848px 8.576px rgba(0, 0, 0, 0.1096)) drop-shadow(0px 2.1216px 3.712px rgba(0, 0, 0, 0.0692))',
         imgPosition:{top: '-28px', left: '17px'},
-        image: oilFilter,
         color: '#EBBF5E',
         textColor: '#1D1E22',
         title: 'Oil Filter',
@@ -69,9 +62,11 @@ export const categories = {
         ]
     },
     brake: {
+        titleMargin: '13px',
+        paddingTop: '110px',
+        image: brake,
         imgPosition:{top: '-23px', left: '31px'},
         imgShadow: 'drop-shadow(0px 54px 51px rgba(0, 0, 0, 0.43)) drop-shadow(0px 10.8px 8.2875px rgba(0, 0, 0, 0.215))',
-        image: brake,
         color: '#9C170D',
         textColor: '#FFFFFF',
         title: 'Brake Pads',
@@ -81,8 +76,10 @@ export const categories = {
         products: []
     },
     soundSystems: {
-        imgPosition:{top: '-15px', left: '-11px'},
+        titleMargin: '33px',
+        paddingTop: '97px',
         image: speakers,
+        imgPosition:{top: '-15px', left: '-11px'},
         color: '#F69058',
         textColor: '#1D1E22',
         title:  'Sound Systems',
@@ -92,8 +89,10 @@ export const categories = {
         products: []
     },
     wheels: {
-        imgPosition:{top: '-20px', left: '4px'},
+        titleMargin: '16px',
+        paddingTop: '123px',
         image: wheel,
+        imgPosition:{top: '-20px', left: '4px'},
         color: '#C5C3BC',
         textColor: '#1D1E22',
         title:  'Tires & Wheels',
@@ -103,9 +102,11 @@ export const categories = {
         products: []
     },
     floor: {
+        titleMargin: '12px',
+        paddingTop: '139px',
+        image: floorMats,
         imgPosition:{top: '-18px', left: '4.5px'},
         imgShadow: 'drop-shadow(0px 78px 80px rgba(0, 0, 0, 0.25)) drop-shadow(0px 45.9264px 41.728px rgba(0, 0, 0, 0.1808)) drop-shadow(0px 23.5872px 19.584px rgba(0, 0, 0, 0.1404)) drop-shadow(0px 9.4848px 8.576px rgba(0, 0, 0, 0.1096)) drop-shadow(0px 2.1216px 3.712px rgba(0, 0, 0, 0.0692))',
-        image: floorMats,
         color: '#B7BFC5',
         textColor: '#1D1E22',
         title:  'Floor Mats',
@@ -115,6 +116,8 @@ export const categories = {
         products: []
     },
     headlights: {
+        titleMargin: '13px',
+        paddingTop: '110px',
         imgPosition:{top: '-20px', left: '0px'},
         imgShadow: 'drop-shadow(0px 54px 51px rgba(0, 0, 0, 0.43)) drop-shadow(0px 10.8px 8.2875px rgba(0, 0, 0, 0.215))',
         image: headLights,

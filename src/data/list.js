@@ -1,8 +1,6 @@
 import Volswagen from "./images/volswagen.svg"
 import Mazda from "./images/mazda.svg"
 import Peugeot from "./images/peugeot.svg"
-import LogoLight from "./images/Logo.svg"
-import LogoDark from "./images/LogoDark.svg"
 import rewardsIcon from "./images/rewardsIcon.svg"
 import arrow from "./images/arrowRight.svg"
 import Rewards from '../components/rewardsCounter/'
@@ -26,8 +24,6 @@ export const Reward = Rewards;
 // case 2:
 // export const Reward = null;
 
-export const radius = "3px";
-
 export const text = {
     card:{
         info1: 'Fuel type:',
@@ -45,11 +41,6 @@ export const text = {
         subtitle: 'Description goes here',
         button: {xl:'Take the Survey!', sm:arrow}
     }
-}
-
-export const logo ={
-    light: LogoLight,
-    dark: LogoDark
 }
 
 export const cars = [

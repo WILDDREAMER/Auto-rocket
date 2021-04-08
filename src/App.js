@@ -34,7 +34,7 @@ function App() {
               <Tiles dark={dark}></Tiles>
             </Route>
             <Route path="/aftermarket">
-              <Aftermarket></Aftermarket>
+              <Aftermarket dark={dark}></Aftermarket>
             </Route>
           </Switch>
         </div>

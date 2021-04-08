@@ -27,7 +27,7 @@ a {
 h1 {
 	flex-grow: 0;
 	font-family: $font-primary-semi-bold;
-	font-size: 28px !important;
+	font-size: 24px !important;
 	font-weight: 600;
 	font-stretch: normal;
 	font-style: normal;
@@ -45,7 +45,7 @@ h2{
 	line-height: normal;
 	letter-spacing: normal;
 	text-align: center;
-	color: #0c1a27;
+	// color: #0c1a27;
 }
 p{
 	&.List-expires {
@@ -227,12 +227,13 @@ h3 {
 	}
 }
 .rewardsCounter{
-	font-family: $font-primary-semi-bold;
+	font-family: $font-primary-medium;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 15px;
 	letter-spacing: -0.01em;
+	color: #0A84FF;
 }
 .takeTheSurvey{
 	font-family: $font-secondary-medium;

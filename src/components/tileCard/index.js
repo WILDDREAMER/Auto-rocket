@@ -1,6 +1,6 @@
 import Button from "../button/"
 import arrow from "../../data/images/arrowThick.svg"
-import {radius} from "../../data/tiles"
+import {radius} from "../../data/global"
 export default function TileCard(props) {
     return (
         <div className='tileCard' style={{background: props.article.color, borderRadius: radius}}>

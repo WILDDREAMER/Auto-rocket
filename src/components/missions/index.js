@@ -1,5 +1,6 @@
 import Button from "../../components/button/"
-import { colors, text, missions, radius } from "../../data/list"
+import { colors, text, missions } from "../../data/list"
+import { radius } from "../../data/global"
 
 export default function Missions(props) {
     const styling = (props.xl) ?

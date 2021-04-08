@@ -4,7 +4,6 @@ import Volswagen2017 from "./images/volswagen2017.svg"
 import Toyota from "./images/toyota2012.svg"
 import rewardsIcon from "./images/rewardsIcon.svg"
 
-export const radius = "8px";
 export const theSurvey = {text: "Take the Survey and Earn Reward Points", color: '#FA9268'};
 
 export const listBackground = {};

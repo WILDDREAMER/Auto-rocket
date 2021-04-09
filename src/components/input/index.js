@@ -1,8 +1,10 @@
 import React from 'react'
-import { colors } from "../../data/list"
+import { radius, colors } from "../../data/global"
 
-export default function Input(props) {
-    const inputStyling = (props.dark) ? { color: colors.primaryLight, background: colors.primaryDark } : { color: colors.textLight };
-
-    return <input placeholder="+1" style={inputStyling} type="text" />
+export default function Input({ dark, placeHolder }) {
+    const inputStyling = (dark) ?
+        { borderRadius: radius, color: colors.dark.text, backgroundColor: colors.dark.input, border: '1px solid #36383D' }
+        :
+        { borderRadius: radius, color: colors.light.text, backgroundColor: colors.light.input };
+    return <input placeholder={placeHolder} style={inputStyling} type="text" />
 }

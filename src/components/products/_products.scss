@@ -1,0 +1,7 @@
+.products{
+    .productsList{
+        @include flex(center,center);
+        flex-direction: column;
+        gap: 16px;
+    }
+}

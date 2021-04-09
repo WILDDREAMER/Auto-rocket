@@ -1,0 +1,34 @@
+.product{
+    padding-right: 23px;
+    overflow: hidden;
+    width: 374px;
+    height: 150px;
+    @include flex(center,center);
+    position: relative;
+    gap: 20px;
+    .image{
+        height: 150px;
+        width: 133px;
+        background-color: white;
+        img{
+            width: 124px;
+            height: 100%;
+        }
+    }
+    .infos{
+        @include flex(center,flex-start);
+        flex-direction: column;
+        gap: 8px;
+        .reviewsContainer{
+            width: 100%;
+            @include flex(space-between, flex-end);
+            .rate{
+                display: flex;
+                gap: 4.23px;
+            }
+            .reviews{
+                line-height: 100%;
+            }
+        }
+    }
+}

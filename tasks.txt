@@ -13,4 +13,4 @@
 - multiple languages
 - fix missions component
 - create category card
-- 
+- search icon

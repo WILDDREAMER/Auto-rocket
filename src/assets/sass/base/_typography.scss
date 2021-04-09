@@ -67,6 +67,34 @@ p{
 		}
 	}
 }
+.product{
+	.title{
+		font-family: $font-primary-semi-bold;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: -0.02em;
+	}
+	.price{
+		font-family: $font-primary-medium;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 27px;
+		/* identical to box height */
+		letter-spacing: -0.02em;
+	}
+	.reviews{
+		font-family: $font-primary-medium;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: -0.01em;
+		color: #828282;
+	}
+}
 .card{
 	p{
 		&.title {

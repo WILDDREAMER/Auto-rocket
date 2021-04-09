@@ -1,26 +1,31 @@
 .aftermarket{
     padding-bottom: 56px;
-    h1, h2{
-        margin: 0;
-    }
-    h1{
-        padding-top: 24px;
-    }
-    .categories{
-        padding-top: 48px;
-        position: relative;
-        @include flex(center,flex-start);
-        .left{
-            width: 50%;
-            @include flex(center,center);
-            flex-direction: column;
-            gap: 31px;
+    .body{
+        padding-left: 20px;
+        padding-right: 20px;
+        h1, h2{
+            margin: 0;
         }
-        .right{
-            width: 50%;
-            @include flex(center,center);
-            flex-direction: column;
-            gap: 31px;
+        h1{
+            padding-top: 24px;
+        }
+        .categories{
+            gap: 16px;
+            padding-top: 48px;
+            position: relative;
+            @include flex(center,flex-start);
+            .left{
+                width: 50%;
+                @include flex(center,center);
+                flex-direction: column;
+                gap: 31px;
+            }
+            .right{
+                width: 50%;
+                @include flex(center,center);
+                flex-direction: column;
+                gap: 31px;
+            }
         }
     }
 }

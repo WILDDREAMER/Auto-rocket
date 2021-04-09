@@ -58,11 +58,11 @@ export default function CarCard(props) {
             <Type></Type>
             <div className='text-field'>
                 <p className='infos' style={textStyling}>{text.card.info2}</p>
-                {rateDisplay("green", props)}
+                {rateDisplay("green", props.green)}
             </div>
             <div className='text-field'>
                 <p className='infos' style={textStyling}>{text.card.info3}</p>
-                {rateDisplay("safety", props)}
+                {rateDisplay("safety", props.safety)}
             </div>
         </div>
     )

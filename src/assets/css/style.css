@@ -287,7 +287,7 @@ p.infos.footer {
   width: 100%;
 }
 
-.product .title {
+.products .product .title {
   font-family: "Poppins SemiBold";
   font-style: normal;
   font-weight: 600;
@@ -296,7 +296,7 @@ p.infos.footer {
   letter-spacing: -0.02em;
 }
 
-.product .price {
+.products .product .price {
   font-family: "Poppins Medium";
   font-style: normal;
   font-weight: 500;
@@ -306,7 +306,7 @@ p.infos.footer {
   letter-spacing: -0.02em;
 }
 
-.product .reviews {
+.products .product .reviews {
   font-family: "Poppins Medium";
   font-style: normal;
   font-weight: 500;
@@ -314,6 +314,15 @@ p.infos.footer {
   line-height: 21px;
   letter-spacing: -0.01em;
   color: #828282;
+}
+
+.products .tagButton {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
 }
 
 .card p.title {
@@ -823,6 +832,22 @@ input ::placeholder {
   align-items: center;
   flex-direction: column;
   gap: 16px;
+}
+
+.products .tags {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.products .tags .tagButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 118px;
+  height: 40px;
 }
 
 .aftermarket {

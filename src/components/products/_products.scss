@@ -4,4 +4,14 @@
         flex-direction: column;
         gap: 16px;
     }
+    .tags{
+        margin-bottom: 24px;
+        @include flex(flex-start,center);
+        gap: 8px;
+        .tagButton{
+            @include flex(center,center);
+            width: 118px;
+            height: 40px;
+        }
+    }
 }

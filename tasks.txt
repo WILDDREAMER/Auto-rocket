@@ -9,8 +9,7 @@
 - tiles +
 - toggle mode automatically +
 - react router +
-- expire countdown 
-- multiple languages
+- create category card +
 - fix missions component
-- create category card
 - search icon
+- fix clicked

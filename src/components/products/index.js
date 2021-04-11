@@ -38,10 +38,11 @@ export default function Products({ category, dark }) {
                 }
             </div>
             <div className='productsList'>
-                <Product dark={dark} product={category.products[0]}></Product>
-                <Product dark={dark} product={category.products[1]}></Product>
-                <Product dark={dark} product={category.products[2]}></Product>
-                <Product dark={dark} product={category.products[3]}></Product>
+                {
+                    category.products.map((product)=>{
+                        return <Product dark={dark} product={product}></Product>
+                    })
+                }
             </div>
         </div>
     )

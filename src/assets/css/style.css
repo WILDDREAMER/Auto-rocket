@@ -457,6 +457,61 @@ h3 {
   color: #0d1a27;
 }
 
+.productDetails .title {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+}
+
+.productDetails .price {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+}
+
+.productDetails .reviews, .productDetails .id {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.productDetails .description {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  letter-spacing: -0.01em;
+}
+
+.productDetails .detailsTitle {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.productDetails .row {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
 .missions .title {
   width: 271px;
   font-family: "Poppins Bold";
@@ -851,6 +906,61 @@ input ::placeholder {
   align-items: center;
   width: 118px;
   height: 40px;
+}
+
+.productDetails .image {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.productDetails .infos {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.productDetails .infos .rateAndId {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.productDetails .details {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.productDetails .details .detailsTitle {
+  margin-bottom: 16px;
+}
+
+.productDetails .details .row {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productDetails .details .row.color {
+  background-color: #f2f2f2;
+}
+
+.productDetails .details .row p.content {
+  width: 44%;
+  text-align: right;
 }
 
 .aftermarket {

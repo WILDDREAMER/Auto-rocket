@@ -241,6 +241,57 @@ h3 {
   color: #0d1a27;
 }
 
+.productDetails{
+	.title{
+		font-family: $font-primary-bold;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 25px;
+		letter-spacing: -0.02em;
+	}
+	.price{
+		font-family: $font-primary-medium;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 25px;
+		letter-spacing: -0.02em;
+	}
+	.reviews, .id{
+		font-family: $font-primary-regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 25px;
+	}
+	.description{
+		font-family: $font-primary-regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 22px;
+		align-items: center;
+		letter-spacing: -0.01em;
+	}
+	.detailsTitle{
+		font-family: $font-primary-semi-bold;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: -0.01em;
+		text-align: center;
+	}
+	.row{
+		font-family: $font-primary-medium;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: -0.02em;
+	}
+}
 .missions{
 	.title{
 		width: 271px;

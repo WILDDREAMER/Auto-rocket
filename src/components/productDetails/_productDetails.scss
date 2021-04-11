@@ -1,0 +1,43 @@
+.productDetails{
+    .image{
+        width: 100%;
+        background-color: white;
+        @include flex(center,center);
+        margin-bottom: 16px;
+    }
+    .infos{
+        padding-left: 20px;
+        padding-right: 20px;
+        @include flex(center,flex-start);
+        flex-direction: column;
+        gap: 16px;
+        .rateAndId{
+            width: 100%;
+            @include flex(space-between,center);
+            flex-direction: row;
+        }
+        margin-bottom: 32px;
+    }
+    .details{
+        padding-left: 20px;
+        padding-right: 20px;
+        .detailsTitle{
+            margin-bottom: 16px;
+        }
+        .row{
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 46px;
+            @include flex(space-between,center);
+            &.color{
+                background-color: #f2f2f2;
+            }
+            p{
+                &.content{
+                    width: 44%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

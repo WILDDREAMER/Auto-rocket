@@ -592,6 +592,9 @@ footer {
 }
 
 .topBar {
+  position: fixed;
+  top: 0;
+  z-index: 4;
   width: 100%;
   height: 64px;
   display: flex;

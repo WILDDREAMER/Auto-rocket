@@ -19,8 +19,8 @@ function App() {
   useEffect(() => {
     setDark(() => {setDark(currentMode)})
   }, [currentMode])
-  const listStyleDark = { ...{ backgroundColor: colors.secondaryDark }, ...listBackground };
-  const listStyleLight = { ...{ backgroundColor: colors.secondaryLight }, ...listBackground };
+  const listStyleDark = { ...{ backgroundColor: colors.secondaryDark , paddingTop: '80px'}, ...listBackground };
+  const listStyleLight = { ...{ backgroundColor: colors.secondaryLight , paddingTop: '80px'}, ...listBackground };
 
   return (
     <div style={(dark) ? listStyleDark : listStyleLight}>

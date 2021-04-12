@@ -1,9 +1,16 @@
 import { Button } from "react-bootstrap";
 import rateDisplay from "../rate-display";
+import { colors } from '../../data/global'
 
-export function ProductDetails({ product }) {
+export function ProductDetails({ product, dark }) {
+	const styling = (dark)
+		?
+		{ backgroundColor: colors.dark.background, color: colors.dark.text }
+		:
+		{ backgroundColor: 'white', color: colors.light.text }
+
 	return (
-		<div className='productDetails'>
+		<div className='productDetails' style={styling}>
 			<div className='image'><img src={product.image} alt="" /></div>
 			<div className='infos'>
 				<p className='title'>{product.title}</p>
@@ -21,7 +28,10 @@ export function ProductDetails({ product }) {
 				{
 					product.details.map((detail, index) => {
 						return (
-							<div className={(index % 2 === 0)? 'row color':'row'}>
+							<div className='detail' style={{
+								backgroundColor: (index % 2 === 0)
+									? ((dark) ? '#38393F' : '#F2F2F2') : 'transparent'
+							}}>
 								<p>{detail.title}</p>
 								<p className='content'>{detail.content}</p>
 							</div>

@@ -1,15 +1,16 @@
 .aftermarket{
-    padding-bottom: 56px;
     .body{
-        padding-left: 20px;
-        padding-right: 20px;
         h1, h2{
             margin: 0;
         }
         h1{
+            margin-top: 24px;
             padding-top: 24px;
         }
         .categories{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 56px;
             gap: 16px;
             padding-top: 48px;
             position: relative;

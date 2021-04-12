@@ -1,4 +1,5 @@
 .productDetails{
+    padding-bottom: 46px;
     .image{
         width: 100%;
         background-color: white;
@@ -19,22 +20,18 @@
         margin-bottom: 32px;
     }
     .details{
-        padding-left: 20px;
-        padding-right: 20px;
         .detailsTitle{
             margin-bottom: 16px;
         }
-        .row{
-            padding-left: 20px;
-            padding-right: 20px;
-            height: 46px;
+        .detail{
+            padding: 10px 20px;
             @include flex(space-between,center);
             &.color{
-                background-color: #f2f2f2;
+                background-color: white;
             }
             p{
                 &.content{
-                    width: 44%;
+                    width: 40%;
                     text-align: right;
                 }
             }

@@ -503,7 +503,7 @@ h3 {
   text-align: center;
 }
 
-.productDetails .row {
+.productDetails .detail {
   font-family: "Poppins Medium";
   font-style: normal;
   font-weight: 500;
@@ -884,6 +884,12 @@ input ::placeholder {
   line-height: 100%;
 }
 
+.products {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 56px;
+}
+
 .products .productsList {
   display: flex;
   justify-content: center;
@@ -906,6 +912,10 @@ input ::placeholder {
   align-items: center;
   width: 118px;
   height: 40px;
+}
+
+.productDetails {
+  padding-bottom: 46px;
 }
 
 .productDetails .image {
@@ -936,40 +946,24 @@ input ::placeholder {
   flex-direction: row;
 }
 
-.productDetails .details {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .productDetails .details .detailsTitle {
   margin-bottom: 16px;
 }
 
-.productDetails .details .row {
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 46px;
+.productDetails .details .detail {
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.productDetails .details .row.color {
-  background-color: #f2f2f2;
+.productDetails .details .detail.color {
+  background-color: white;
 }
 
-.productDetails .details .row p.content {
-  width: 44%;
+.productDetails .details .detail p.content {
+  width: 40%;
   text-align: right;
-}
-
-.aftermarket {
-  padding-bottom: 56px;
-}
-
-.aftermarket .body {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .aftermarket .body h1, .aftermarket .body h2 {
@@ -977,10 +971,14 @@ input ::placeholder {
 }
 
 .aftermarket .body h1 {
+  margin-top: 24px;
   padding-top: 24px;
 }
 
 .aftermarket .body .categories {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 56px;
   gap: 16px;
   padding-top: 48px;
   position: relative;

@@ -21,8 +21,8 @@ function App() {
   useEffect(() => {
     setDark(() => { setDark(currentMode) })
   }, [currentMode])
-  const listStyleDark = { ...{ backgroundColor: colors.secondaryDark, paddingTop: '80px' }, ...listBackground };
-  const listStyleLight = { ...{ backgroundColor: colors.secondaryLight, paddingTop: '80px' }, ...listBackground };
+  const listStyleDark = { ...{ backgroundColor: colors.secondaryDark, paddingTop: '56px' }, ...listBackground };
+  const listStyleLight = { ...{ backgroundColor: colors.secondaryLight, paddingTop: '56px' }, ...listBackground };
 
   return (
     <div style={(dark) ? listStyleDark : listStyleLight}>
@@ -36,8 +36,8 @@ function App() {
               <Tiles dark={dark}></Tiles>
             </Route>
             <Route path="/aftermarket">
-              <ProductDetails product={categories.filter.products[0]}></ProductDetails>
-              {/* <Aftermarket dark={dark}></Aftermarket> */}
+              {/* <ProductDetails product={categories.filter.products[0]} dark={dark}></ProductDetails> */}
+              <Aftermarket dark={dark}></Aftermarket>
             </Route>
           </Switch>
         </BrowserRouter>

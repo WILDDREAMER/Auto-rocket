@@ -1,10 +1,10 @@
 import {radius, colors} from '../../data/global'
 import rateDisplay from '../rate-display';
 
-export default function Product({product, dark}) {
+export default function Product({product, dark, onClick}) {
     const styling = (dark) ? {borderRadius: radius, backgroundColor: colors.dark.product, color: colors.dark.text} : {borderRadius: radius, backgroundColor: colors.light.product, color: colors.light.text};
     return(
-        <div className='product' style={styling}>
+        <div className='product' style={styling} onClick={onClick}>
             <div className='image'>
             <img src={product.image} alt="" />
             </div>

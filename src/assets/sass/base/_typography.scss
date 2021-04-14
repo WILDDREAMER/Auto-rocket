@@ -315,6 +315,36 @@ h3 {
 		color: #1d1b19;
 	}
 }
+.profile{
+	h1{
+		font-family: $font-primary-semi-bold;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 32px;
+		text-align: center;
+		letter-spacing: -0.01em;
+	}
+	.number{
+		font-family: $font-primary-semi-bold;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: -0.02em;
+	}
+	.addName{
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: -0.01em;
+		color: #0A84FF;
+	}
+}
 .rewardsCounter{
 	font-family: $font-primary-medium;
 	font-style: normal;

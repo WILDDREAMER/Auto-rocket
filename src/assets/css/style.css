@@ -556,7 +556,7 @@ h3 {
 }
 
 .profile .addName {
-  font-family: Poppins;
+  font-family: "Poppins Medium";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -564,6 +564,47 @@ h3 {
   text-align: center;
   letter-spacing: -0.01em;
   color: #0A84FF;
+}
+
+.profile .header p {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.profile .header p.selected {
+  font-family: "Poppins SemiBold";
+}
+
+.profile .timeline .title {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.profile .timeline .date {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  text-align: right;
+  letter-spacing: -0.02em;
+}
+
+.profile .timeline .text {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
 }
 
 .rewardsCounter {
@@ -997,6 +1038,27 @@ input ::placeholder {
   text-align: right;
 }
 
+.profile .timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 34px;
+}
+
+.profile .timeline .item {
+  width: 100%;
+  padding: 20px;
+}
+
+.profile .timeline .item .titleAndDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .aftermarket .body h1, .aftermarket .body h2 {
   margin: 0;
 }
@@ -1034,5 +1096,41 @@ input ::placeholder {
   align-items: center;
   flex-direction: column;
   gap: 31px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile h1 {
+  margin-bottom: 24px;
+}
+
+.profile img {
+  margin-bottom: 16px;
+}
+
+.profile .addName {
+  margin-bottom: 38px;
+}
+
+.profile .header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .header p {
+  width: 50%;
+  border-bottom: 3px solid;
+  opacity: 0.65;
+}
+
+.profile .header p.selected {
+  opacity: 100%;
 }
 /*# sourceMappingURL=style.css.map */

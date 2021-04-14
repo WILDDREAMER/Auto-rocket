@@ -6,13 +6,15 @@ export const colors = {
         background: '#1f2024',
         text: '#fff',
         product: '#323338',
-        input: '#313238'
+        input: '#313238',
+        card: '#323338'
     },
     light: {
         background: '#edf0f3',
         text: '#1F2024',
         product: '#fff',
-        input: '#DFE3E8'
+        input: '#DFE3E8',
+        card: '#fff'
     }
 }
 

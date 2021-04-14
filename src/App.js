@@ -12,6 +12,7 @@ import { categories } from './data/aftermarket'
 import Tiles from './pages/tiles/';
 import List from './pages/list/';
 import Aftermarket from './pages/aftermarket';
+import Profile from './pages/profile';
 import Products from './components/products';
 import { ProductDetails } from './components/productDetails';
 
@@ -36,8 +37,10 @@ function App() {
               <Tiles dark={dark}></Tiles>
             </Route>
             <Route path="/aftermarket">
-              {/* <ProductDetails product={categories.filter.products[0]} dark={dark}></ProductDetails> */}
               <Aftermarket dark={dark}></Aftermarket>
+            </Route>
+            <Route path="/profile">
+              <Profile dark={dark}></Profile>
             </Route>
           </Switch>
         </BrowserRouter>

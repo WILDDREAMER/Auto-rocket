@@ -1,7 +1,10 @@
 .profile{
     .myrewards{
+        @include flex(center,center);
+        flex-direction: column;
         padding-top: 32px;
         .rewards{
+            width: 100%;
             @include flex(flex-start,center);
             gap: 16px;
             position: relative;
@@ -16,6 +19,7 @@
             }
         }
         .cards{
+            width: 100%;
             margin-top: 32px;
             @include flex(center,center);
             flex-direction: column;
@@ -28,6 +32,19 @@
                     margin: 0;
                 }
             }
+            margin-bottom: 72px;
+        }
+        .small{
+            margin-bottom: 16px;
+        }
+        .redeemCards{
+            @include flex(center,center);
+            flex-direction: column;
+            gap: 18px;
+            margin-bottom: 50px;
+        }
+        .earnCards{
+            width: 100%;
         }
     }
 }

@@ -1,0 +1,21 @@
+.redeem{
+    width: 374px;
+    overflow: hidden;
+    @include flex(center,center);
+    flex-direction: column;
+    .redeemImg{
+        margin-bottom: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .text{
+        width: 100%;
+        padding: 16px 20px 16px;
+        .redeemHeader{
+            @include flex(space-between,center);
+        }
+        .desc{
+            margin-bottom: 16px;
+        }
+    }
+}

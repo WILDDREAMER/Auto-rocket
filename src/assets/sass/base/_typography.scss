@@ -429,8 +429,45 @@ h3 {
 				}
 			}
 		}
+		.big{
+			font-family: $font-primary-semi-bold;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 36px;
+			text-align: center;
+			letter-spacing: -0.01em;
+		}
+		.small{
+			font-family: $font-primary-medium;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 27px;
+			text-align: center;
+		}
 	}
 }
+
+.redeem{
+	.title, .pt{
+		font-family: $font-primary-medium;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.desc{
+		font-family: $font-primary-bold;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 23px;
+		line-height: 28px;
+		letter-spacing: -0.02em;
+	}
+}
+
 .rewardsCounter{
 	font-family: $font-primary-medium;
 	font-style: normal;

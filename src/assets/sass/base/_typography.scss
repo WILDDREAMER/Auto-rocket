@@ -384,6 +384,52 @@ h3 {
 			letter-spacing: -0.01em;
 		}
 	}
+	.whatIsMissionPoints{
+		.title{
+			font-family: $font-primary-semi-bold;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 32px;
+			text-align: center;
+			letter-spacing: -0.01em;
+		}
+		.text{
+			font-family: $font-primary-regular;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+	.myrewards{
+		.cards{
+			font-family: $font-primary-semi-bold;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 17px;
+			line-height: 22px;
+			letter-spacing: -0.01em;
+		}
+		.rewards{
+			p{
+				font-family: $font-primary-medium;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 25px;
+				letter-spacing: -0.02em;
+				span{
+					font-family: $font-primary-semi-bold;
+					font-style: normal;
+					font-weight: 600;
+					font-size: 20px;
+					line-height: 25px;
+					letter-spacing: -0.02em;
+				}
+			}
+		}
+	}
 }
 .rewardsCounter{
 	font-family: $font-primary-medium;

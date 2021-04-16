@@ -1,0 +1,33 @@
+.profile{
+    .myrewards{
+        padding-top: 32px;
+        .rewards{
+            @include flex(flex-start,center);
+            gap: 16px;
+            position: relative;
+            *{
+                margin: 0;
+            }
+            .question{
+                justify-self: flex-end;
+                position: absolute;
+                right: 0;
+                top: 13px;
+            }
+        }
+        .cards{
+            margin-top: 32px;
+            @include flex(center,center);
+            flex-direction: column;
+            gap: 12px;
+            div{
+                width: 100%;
+                padding: 13px 20px;
+                @include flex(space-between, center);
+                img{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

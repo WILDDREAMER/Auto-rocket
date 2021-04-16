@@ -1,4 +1,5 @@
 .profile{
+    width: 100%;
     @include flex(center, center);
     flex-direction: column;
     h1{
@@ -10,15 +11,18 @@
     .addName{
         margin-bottom: 38px;
     }
-    .header{
+    .body{
         width: 100%;
-        @include flex(center,center);
-        p{
-            width: 50%;
-            border-bottom: 3px solid;
-            opacity: 0.65;
-            &.selected{
-                opacity: 100%;
+        .header{
+            width: 100%;
+            @include flex(center,center);
+            p{
+                width: 50%;
+                border-bottom: 3px solid;
+                opacity: 0.65;
+                &.selected{
+                    opacity: 100%;
+                }
             }
         }
     }

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Timeline from '../../components/timeline'
 import { profile } from '../../data/profile'
 import { colors } from '../../data/global'
-import myRewards from '../../components/myRewards'
+import MyRewards from '../../components/myRewards'
 
 export default function Profile({ dark }) {
     const [body, setBody] = useState(<Timeline dark={dark}></Timeline>)
@@ -27,7 +27,7 @@ export default function Profile({ dark }) {
                 }>Timeline</p>
                 <p className={rewards} onClick={
                     () => {
-                        setBody(<myRewards dark={dark}></myRewards>)
+                        setBody(<MyRewards dark={dark}></MyRewards>)
                         setTimeline('')
                         setRewards('selected')
                     }

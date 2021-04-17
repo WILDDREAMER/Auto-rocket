@@ -1,68 +1,42 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-import Regular from "../../data/images/regular.svg"
-import Premium from "../../data/images/premium.svg"
-import Diesel from "../../data/images/diesel.svg"
+import Type from '../fuel'
 import rateDisplay from "../rate-display"
+import like from '../../data/images/Like.svg'
+import redlike from '../../data/images/redlike.svg'
+import feedback from '../../data/images/feedback.svg'
+import { text } from "../../data/list"
+import { radius, colors } from "../../data/global"
 
-import { colors, text } from "../../data/list"
-import { radius } from "../../data/global"
-
-export default function CarCard(props) {
-    const textStyling = (props.dark) ? { color: colors.textDark } : { color: colors.textLigh };
-    const cardListStyling = (props.dark) ? { background: '#323338', borderRadius: radius } : { color: colors.textLigh, borderRadius: radius };
-
-    function Type() {
-        if (props.type === "premium")
-            return (
-                <div className='text-field' >
-                    <p className='infos' style={textStyling}>{text.card.info1}</p>
-                    <div className='fuel-container'>
-                        <img src={Premium} alt="" />
-                        <p className='fuel-type' style={textStyling}>Premium Petrol</p>
-                    </div>
-                </div>
-            )
-        else if (props.type === "diesel")
-            return (
-                <div className='text-field' >
-                    <p className='infos' style={textStyling}>{text.card.info1}</p>
-                    <div className='fuel-container'>
-                        <img src={Diesel} alt="" />
-                        <p className='fuel-type' style={textStyling}>Diesel</p>
-                    </div>
-                </div>
-            )
-        else if (props.type === "regular")
-            return (
-                <div className='text-field' >
-                    <p className='infos' style={textStyling}>{text.card.info1}</p>
-                    <div className='fuel-container'>
-                        <img src={Regular} alt="" />
-                        <p className='fuel-type' style={textStyling}>Regular Petrol</p>
-                    </div>
-                </div>
-            )
-        else {
-            return <></>
-        }
-    }
+export default function CarCard({ dark, car }) {
+    const textStyling = (dark) ? { color: colors.dark.text } : { color: colors.light.text };
+    const cardListStyling = (dark) ? { background: colors.dark.card, borderRadius: radius } : { background: colors.light.card, color: colors.dark.text, borderRadius: radius };
+    const [heart, setHeart] = useState(like);
+    
 
     return (
         <div className='card' style={cardListStyling}>
-            <img src={props.img} alt="" />
-            <div className='text-field title'>
-                <p className='title' style={textStyling}>{props.title}</p>
-                <p className='subtitle' >${props.subtitle}</p>
-            </div>
-            <Type></Type>
-            <div className='text-field'>
-                <p className='infos' style={textStyling}>{text.card.info2}</p>
-                {rateDisplay("green", props.green)}
-            </div>
-            <div className='text-field'>
-                <p className='infos' style={textStyling}>{text.card.info3}</p>
-                {rateDisplay("safety", props.safety)}
+            <img className='like' src={heart}  alt="" />
+            <img className='image' src={car.img} alt="" onClick={() => setHeart(curr => (curr === like) ? redlike : like)}/>
+            <div className='cont'>
+                <div className='text-field title'>
+                    <p className='title' style={textStyling}>{car.title}</p>
+                    <p className='subtitle' >${car.subtitle}</p>
+                </div>
+                <p className='secondTitle'>{car.secondTitle}</p>
+                <Type car={car} dark={dark}></Type>
+                <div className='text-field'>
+                    <p className='infos' style={textStyling}>{text.card.info2}</p>
+                    {rateDisplay("green", car.green)}
+                </div>
+                <div className='text-field'>
+                    <p className='infos' style={textStyling}>{text.card.info3}</p>
+                    {rateDisplay("safety", car.safety)}
+                </div>
+                <div className='feedback' style={{ width: '100%', borderRadius: radius, backgroundColor: (dark) ? colors.dark.semiCard : colors.light.semiCard }}>
+                    <img src={feedback} alt="" />
+                    {car.feedbacks[0].text}
+                </div>
             </div>
         </div>
     )

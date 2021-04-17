@@ -33,9 +33,6 @@ function App() {
             <Route path="/list">
               <List dark={dark}></List>
             </Route>
-            <Route path="/tiles">
-              <Tiles dark={dark}></Tiles>
-            </Route>
             <Route path="/aftermarket">
               <Aftermarket dark={dark}></Aftermarket>
             </Route>

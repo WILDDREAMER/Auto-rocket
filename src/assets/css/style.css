@@ -374,6 +374,24 @@ p.infos.footer {
   color: #000000;
 }
 
+.card p .secondTitle {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+}
+
+.card .feedback {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+}
+
 p .takeSurvey {
   font-family: "Poppins Medium";
   font-size: 15px;
@@ -745,32 +763,48 @@ footer {
 .card-list .card {
   box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.1), 0px 0.8px 13px rgba(0, 0, 0, 0.05);
   width: 100%;
-  padding: 16px;
+}
+
+.card-list .card .image {
+  width: 100%;
+  border: 6px;
+}
+
+.card-list .card .like {
+  max-width: 24px;
+  max-height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.card-list .card .cont {
+  padding: 0px 16px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.card-list .card img {
-  width: 100%;
-  border: 6px;
+.card-list .card .cont .secondTitle {
+  align-self: flex-start;
+  margin-bottom: 16px;
+  opacity: 0.7;
 }
 
-.card-list .card .title {
-  padding-top: 10px;
-  margin-bottom: 10px;
-}
-
-.card-list .card .text-field {
+.card-list .card .cont .text-field {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 3px;
 }
 
-.card-list .card .text-field .fuel-container {
+.card-list .card .cont .text-field .title {
+  padding-top: 10px;
+}
+
+.card-list .card .cont .text-field .fuel-container {
   width: 100%;
   gap: 4px;
   padding-bottom: 3px;
@@ -779,24 +813,33 @@ footer {
   align-items: flex-start;
 }
 
-.card-list .card .text-field .fuel-container img {
+.card-list .card .cont .text-field .fuel-container img {
   width: 16px;
   height: 16px;
 }
 
-.card-list .card .text-field .fuel-container p {
+.card-list .card .cont .text-field .fuel-container p {
   line-height: 100%;
 }
 
-.card-list .card .text-field .rate {
+.card-list .card .cont .text-field .rate {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.card-list .card .text-field .rate img {
+.card-list .card .cont .text-field .rate img {
   width: 16px;
   height: 16px;
+}
+
+.card-list .card .cont .feedback {
+  margin-top: 24px;
+  padding: 14px 19px 14px 16px;
+}
+
+.card-list .card .cont .feedback img {
+  margin-right: 8px;
 }
 
 .topBar {

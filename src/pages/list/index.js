@@ -1,27 +1,34 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Card from "../../components/card"
 import Missions from "../../components/missions/"
 import TopBar from "../../components/topBar"
 import Hero from "../../components/hero"
 import Footer from '../../components/footer'
-import {cars, colors, listBackground} from "../../data/list"
-import { Mode, useLightSwitch } from 'use-light-switch'
+import { cars, listBackground } from "../../data/list"
+import { colors } from "../../data/global";
+import CardDetails from '../../components/carDetails/'
 
+export default function List({ dark }) {
+    const listStyleDark = { ...{ backgroundColor: colors.dark.background, color: colors.dark.text }, ...listBackground };
+    const listStyleLight = { ...{ backgroundColor: colors.light.background, color: colors.dark.text }, ...listBackground };
+    const [back, setBack] = useState('');
+    const [link, setLink] = useState('');
 
-export default function List(props) {
-    const listStyleDark = {...{backgroundColor:colors.secondaryDark}, ...listBackground};
-    const listStyleLight = {...{backgroundColor:colors.secondaryLight}, ...listBackground};
+    const getLink = (str) => {
+        setLink(str);
+    }
+
     return (
         <div >
-            <TopBar dark={props.dark}></TopBar>
-            <div className='card-list' style={(props.dark) ? listStyleDark : listStyleLight}>
-                <Hero dark={props.dark}></Hero>
+            <TopBar back={back} dark={dark} sendLink={getLink} ></TopBar>
+            <div className='card-list' style={(dark) ? listStyleDark : listStyleLight}>
+                {/* <Hero dark={dark}></Hero>
                 {cars.map(car => {
-                    return <Card dark={props.dark}  img={car.img} title={car.title} type={car.fuel} green={car.green} safety={car.safety} subtitle={car.subtitle}></Card>
+                    return <Card dark={dark} car={car}></Card>
                 })}
-                <Missions xl></Missions>
+                <Missions xl></Missions> */}
+                <CardDetails car={cars[0]} dark={dark}></CardDetails>
             </div>
-            <Footer dark={props.dark}></Footer>
         </div>
     )
 }

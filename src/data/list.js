@@ -48,25 +48,64 @@ export const cars = [
         img: Volswagen,
         title: "Volswagen Golf",
         subtitle: "15,000",
+        secondTitle: 'Honda Holden Cruze',
         fuel: "premium",
         green: 1,
-        safety: 5
+        safety: 5,
+        year: '2019',
+        reddit: 3,
+        feedbacks: [
+            {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
+            {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
+            {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
+            {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
+        ],
+        take: [
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+        ]
     },
     {
         img: Peugeot,
         title: "Peugeot 308 Allure",
         subtitle: "13,888",
+        secondTitle: 'Honda Holden Cruze',
         fuel: "diesel",
         green: 3,
-        safety: 4
+        safety: 4,
+        year: '2019',
+        reddit: 3,
+        feedbacks: [
+            {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
+        ],
+        take: [
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+        ]
     },
     {
         img: Mazda,
         title: "2012 Mazda 6 Luxury Sports GH MY11",
         subtitle: "14,999",
+        secondTitle: 'Honda Holden Cruze',
         fuel: "regular",
         green: 4,
-        safety: 4
+        safety: 4,
+        year: '2019',
+        reddit: 3,
+        feedbacks: [
+            {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
+        ],
+        take: [
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+        ]
     },
 ]
 

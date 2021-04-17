@@ -7,14 +7,16 @@ export const colors = {
         text: '#fff',
         product: '#323338',
         input: '#313238',
-        card: '#323338'
+        card: '#323338',
+        semiCard: '#474850'
     },
     light: {
         background: '#edf0f3',
         text: '#1F2024',
         product: '#fff',
         input: '#DFE3E8',
-        card: '#fff'
+        card: '#fff',
+        semiCard: '#E1E4E5'
     }
 }
 

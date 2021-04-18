@@ -1296,6 +1296,233 @@ input ::placeholder {
   margin-bottom: 16px;
 }
 
+.carClicked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.carClicked .like {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.carClicked .image {
+  width: 100%;
+}
+
+.carClicked .rate {
+  display: flex;
+  gap: 5px;
+  height: 24px;
+}
+
+.carClicked .rate img {
+  width: 17px;
+}
+
+.carClicked .quality {
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carClicked .quality .status {
+  width: 30%;
+  font-family: "Poppins SemiBold";
+}
+
+.carClicked .quality .status.fuel {
+  width: 37%;
+}
+
+.carClicked .quality .status.fuel .fuel-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.carClicked .quality .titleAndPrice {
+  width: 100%;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.carClicked .quality .titleAndPrice p {
+  width: 50%;
+}
+
+.carClicked .quality .titleAndPrice .title {
+  font-family: "Poppins Bold";
+  font-size: 23px;
+}
+
+.carClicked .quality .titleAndPrice .sub {
+  font-family: "Poppins SemiBold";
+  font-size: 23px;
+  text-align: right;
+}
+
+.carClicked .quality .titleAndPrice .sec {
+  font-family: "Poppins Regular";
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.carClicked .testHolder {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.carClicked .testHolder .test {
+  padding: 6px 20px;
+  background-color: #0A84FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins SemiBold";
+}
+
+.carClicked .testHolder .test .left {
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  font-size: 17px;
+}
+
+.carClicked .testHolder .test .right {
+  font-size: 16px;
+}
+
+.carClicked .testHolder .test .right .refund {
+  font-family: "Poppins Regular";
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.carClicked .bodyNavigation {
+  width: 100%;
+  padding: 48px 20px 72px;
+}
+
+.carClicked .bodyNavigation .header {
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+}
+
+.carClicked .bodyNavigation .header p {
+  font-family: "Poppins Medium";
+  font-size: 18px;
+  text-align: center;
+  flex: 1;
+  opacity: 0.5;
+  border-bottom: 3px solid;
+}
+
+.carClicked .bodyNavigation .header p.selected {
+  opacity: 1;
+}
+
+.carClicked .bodyNavigation .navigationContent {
+  padding-top: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.carClicked .bodyNavigation .navigationContent .child {
+  width: 43%;
+}
+
+.carClicked .bodyNavigation .navigationContent .child .fuel-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+}
+
+.carClicked .bodyNavigation .navigationContent .child p {
+  font-family: "Poppins Medium";
+}
+
+.carClicked .bodyNavigation .navigationContent .child p.title {
+  font-family: "Poppins Bold";
+  font-size: 16px;
+}
+
+.carClicked .ourTake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 32px 20px 72px 20px;
+}
+
+.carClicked .ourTake .title {
+  padding-bottom: 10px;
+  font-family: "Poppins SemiBold";
+  font-size: 24px;
+  text-align: center;
+}
+
+.carClicked .ourTake .takeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.carClicked .ourTake .seeAll {
+  font-family: "Poppins SemiBold";
+  font-size: 16px;
+  color: #007bff;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.take {
+  width: 100%;
+  padding: 20px;
+}
+
+.take .header {
+  font-family: "Poppins SemiBold";
+  font-size: 18px;
+  gap: 8px;
+  padding-bottom: 9px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.take .header .date {
+  margin-left: auto;
+}
+
+.take a {
+  font-family: "Poppins SemiBold";
+}
+
 .aftermarket .body h1, .aftermarket .body h2 {
   margin: 0;
 }

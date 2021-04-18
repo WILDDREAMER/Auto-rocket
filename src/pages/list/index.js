@@ -19,16 +19,16 @@ export default function List({ dark }) {
     }
 
     return (
-        <div >
+        <div style={(dark) ? listStyleDark : listStyleLight}>
             <TopBar back={back} dark={dark} sendLink={getLink} ></TopBar>
-            <div className='card-list' style={(dark) ? listStyleDark : listStyleLight}>
-                {/* <Hero dark={dark}></Hero>
+            <CardDetails car={cars[0]} dark={dark}></CardDetails>
+            {/* <div className='card-list' style={(dark) ? listStyleDark : listStyleLight}>
+                <Hero dark={dark}></Hero>
                 {cars.map(car => {
                     return <Card dark={dark} car={car}></Card>
                 })}
-                <Missions xl></Missions> */}
-                <CardDetails car={cars[0]} dark={dark}></CardDetails>
-            </div>
+                <Missions xl></Missions>
+            </div> */}
         </div>
     )
 }

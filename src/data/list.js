@@ -54,6 +54,7 @@ export const cars = [
         safety: 5,
         year: '2019',
         reddit: 3,
+        mileage: 11390,
         feedbacks: [
             {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
             {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
@@ -61,10 +62,10 @@ export const cars = [
             {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
         ],
         take: [
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit '},
         ]
     },
     {
@@ -77,14 +78,15 @@ export const cars = [
         safety: 4,
         year: '2019',
         reddit: 3,
+        mileage: 11390,
         feedbacks: [
             {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
         ],
         take: [
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit '},
         ]
     },
     {
@@ -97,14 +99,15 @@ export const cars = [
         safety: 4,
         year: '2019',
         reddit: 3,
+        mileage: 11390,
         feedbacks: [
             {user: 'John Johnson', text: 'I’ve been using this car for 10 yea...',},
         ],
         take: [
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
-            {user: 'John Johnson', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
+            {user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit... '},
         ]
     },
 ]

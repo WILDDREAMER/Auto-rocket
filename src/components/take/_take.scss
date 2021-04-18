@@ -1,0 +1,17 @@
+.take{
+    width: 100%;
+    padding: 20px;
+    .header{
+        font-family: $font-primary-semi-bold;
+        font-size: 18px;
+        gap: 8px;
+        padding-bottom: 9px;
+        @include flex(flex-start, center);
+        .date{
+            margin-left: auto;
+        }
+    }
+    a{
+        font-family: $font-primary-semi-bold;
+    }
+}

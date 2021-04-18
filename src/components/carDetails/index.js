@@ -125,7 +125,7 @@ export default function CarClicked({ car, dark }) {
                             return <Take index={index} key={index} dark={dark} take={take}></Take>
                         })
                     }
-                    <div className='seeAll' style={{borderRadius: '0 0 16px 16px'}}>
+                    <div className='seeAll' style={{backgroundColor: (dark) ? colors.dark.card : colors.light.background}}>
                         <p>See All</p>
                     </div>
                 </div>

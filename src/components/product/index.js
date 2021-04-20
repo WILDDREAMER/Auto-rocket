@@ -12,7 +12,7 @@ export default function Product({product, dark, onClick}) {
                 <p className='title'>{product.title}</p>
                 <p className='price'>${product.price}</p>
                 <div className='reviewsContainer'>
-                    {rateDisplay('rate', 4)}
+                    {rateDisplay('safety', 4)}
                     <p className='reviews'>{product.reviews} Reviews</p>
                 </div>
             </div>

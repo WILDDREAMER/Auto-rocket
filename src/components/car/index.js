@@ -12,7 +12,7 @@ import CarCard from '../card'
 import { cars } from '../../data/list'
 import Features from '../features'
 
-export default function Car({ car, dark }) {
+export default function Car({ car, dark, sendLink }) {
     const [like, setLike] = useState(heart);
     const style = (dark) ? { color: '#CAC5C1' } : { color: '#404E5C' }
     const takeStyle = (dark) ? { color: colors.dark.text, backgroundColor: colors.dark.backgroundColor } : { color: colors.light.text, backgroundColor: 'white' }
@@ -21,6 +21,7 @@ export default function Car({ car, dark }) {
     const [classFeatures, setFeatures] = useState('')
     const [classSpecs, setSpecs] = useState('')
     const [content, setContent] = useState(<CarDetails dark={dark} car={car}></CarDetails>)
+
     function selected(selected) {
         if (selected === 'details') {
             setFeatures('')
@@ -105,14 +106,15 @@ export default function Car({ car, dark }) {
                 <div className='takeContainer'>
                     {
                         car.reviews.map((take, index) => {
-                            return <Take index={index} key={index} dark={dark} take={take}></Take>
+                            if(index < 3)
+                                return <Take index={index} key={index} dark={dark} take={take} car={car}></Take>
                         })
                     }
                     <div
                         className='seeAll'
                         style={{ backgroundColor: (dark) ? colors.dark.card : colors.light.background }}
                     >
-                        <p>See All</p>
+                        <p onClick={() => sendLink('/reviews')}>See All</p>
                     </div>
                 </div>
             </div>

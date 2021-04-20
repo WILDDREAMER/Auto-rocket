@@ -1,5 +1,6 @@
 import React from 'react'
 import { Reward } from "../../data/list"
+import {Link} from 'react-router-dom'
 import { colors, logo, rewards } from "../../data/global"
 import ProfileIcon from '../../data/images/profileIcon.svg'
 import RewardsIcon from '../../data/images/rewardsIcon.svg'
@@ -24,9 +25,12 @@ export default function TopBar({ dark, back, sendLink }) {
     return (
         <div className='topBar' style={(dark) ? darkStyling : lightStyling}>
             <div className='profileIcon'>
-                {(back) ? <p onClick={() => sendLink(back)} className='rewardsCounter'>{backString}</p> : <img src={ProfileIcon} alt="" />}
+                {(back) ?
+                <p onClick={() => sendLink(back)} className='rewardsCounter'>{backString}</p>
+                :
+                <img src={ProfileIcon} alt="" onClick={() => sendLink('/profile')}/>}
             </div>
-            <img className='logo' src={(dark) ? logo.dark : logo.light} alt="" style={(dark) ? { mixBlendMode: "lighten" } : {}} />
+            <Link to='/list'><img onClick={() => sendLink('/home')} className='logo' src={(dark) ? logo.dark : logo.light} alt="" style={(dark) ? { mixBlendMode: "lighten" } : {}} /></Link>
             <div className='rewards'>
                 <img src={RewardsIcon} alt="" />
                 <p className='rewardsCounter'>{nFormatter(rewards)}</p>

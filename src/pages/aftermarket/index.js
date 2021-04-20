@@ -6,6 +6,7 @@ import { categories } from '../../data/aftermarket'
 import { colors } from '../../data/global'
 import { Link } from "react-router-dom";
 import { ProductDetails } from '../../components/productDetails';
+import Profile from '../profile/index'
 
 export default function Aftermarket(props) {
     const [back, setBack] = useState('');
@@ -32,12 +33,16 @@ export default function Aftermarket(props) {
             setBack('/aftermarket')
             setProduct('')
         }
+        else if (link === '/profile') {
+            setBody(<Profile></Profile> )
+            setBack('/aftermarket')
+            setProduct('')
+        }
     }, [link])
 
     useEffect(() => {
         if (product) {
             setBody(productDetail(product))
-            console.log(product)
         }
     }, [product])
 
@@ -83,7 +88,7 @@ export default function Aftermarket(props) {
             <TopBar back={back} dark={dark} sendLink={getLink} ></TopBar>
             <div className="body">
                 {
-                    (product) ? ''
+                    (product || link === '/profile') ? ''
                         : <>
                             <h1>All the parts you need</h1>
                             <h2>Here's a few we think will fit you</h2>

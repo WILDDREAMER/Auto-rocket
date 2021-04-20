@@ -21,13 +21,14 @@
         gap: 8px;
         .reviewsContainer{
             width: 100%;
-            @include flex(space-between, flex-end);
+            @include flex(space-between, center);
             .rate{
                 display: flex;
                 gap: 4.23px;
             }
             .reviews{
                 line-height: 100%;
+                padding: 0;
             }
         }
     }

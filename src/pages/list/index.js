@@ -8,6 +8,8 @@ import { colors } from "../../data/global";
 import Reviews from '../../components/reviews'
 import Car from '../../components/car/'
 import Profile from '../profile'
+import missionReward from '../../data/images/rewards.svg'
+
 export default function List({ dark }) {
     const listStyleDark = { ...{ backgroundColor: colors.dark.background, color: colors.dark.text }, ...listBackground };
     const listStyleLight = { ...{ backgroundColor: colors.light.background, color: colors.light.text }, ...listBackground };
@@ -29,7 +31,24 @@ export default function List({ dark }) {
                     setCar(car)}
                 } ></Card>
             })}
-            <Missions xl></Missions>
+            <Missions
+                sm
+                icon={missionReward}
+                header='THE NEXT MISSION'
+                title='Take the survey and earn Mission points'
+                subtitle='Description goes here'
+                button='Take the Survey!'
+                background='rgb(255, 192, 67)'
+            ></Missions>
+            <Missions
+                xl
+                icon={missionReward}
+                header='THE NEXT MISSION'
+                title='Take the survey and earn Mission points'
+                subtitle='Description goes here'
+                button='Take the Survey!'
+                background='rgb(255, 192, 67)'
+            ></Missions>
         </div>
     )
     const [body, setBody] = useState(home);

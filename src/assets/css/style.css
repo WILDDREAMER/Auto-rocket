@@ -2047,6 +2047,35 @@ input ::placeholder {
   line-height: 38px;
 }
 
+.reviews {
+  padding: 20px;
+}
+
+.reviews .title {
+  padding-bottom: 16px;
+  font-family: "Poppins SemiBold";
+  font-size: 24px;
+  text-align: center;
+  padding: 24px;
+}
+
+.reviews .cardsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1px;
+}
+
 .aftermarket .body h1, .aftermarket .body h2 {
   margin: 0;
 }

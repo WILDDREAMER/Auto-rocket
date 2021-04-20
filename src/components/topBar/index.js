@@ -1,13 +1,13 @@
 import React from 'react'
-import { colors, Reward } from "../../data/list"
-import { logo, rewards } from "../../data/global"
+import { Reward } from "../../data/list"
+import { colors, logo, rewards } from "../../data/global"
 import ProfileIcon from '../../data/images/profileIcon.svg'
 import RewardsIcon from '../../data/images/rewardsIcon.svg'
 
 export default function TopBar({ dark, back, sendLink }) {
 
-    const darkStyling = { background: colors.primaryDark, justifyContent: (Reward) ? 'space-between' : 'center' };
-    const lightStyling = { background: colors.primaryLight, justifyContent: (Reward) ? 'space-between' : 'center' };
+    const darkStyling = { background: colors.dark.background, justifyContent: (Reward) ? 'space-between' : 'center' };
+    const lightStyling = { background: 'white', justifyContent: (Reward) ? 'space-between' : 'center' };
     const backString = '< Back';
     function nFormatter(num) {
         if (num >= 1000000000) {

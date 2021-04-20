@@ -68,14 +68,17 @@ export const cars = [
                 title: 'thecarwebsite.io',
                 text: 'Reasons to Buy • Pros vs. Cons 2020 Chevrolet Mal...'
             },
-        ],
+        ], 
         feedbacks: [
             { user: 'John Johnson', text: 'I’ve been using this car for 10 yea...', },
             { user: 'John Johnson', text: 'I’ve been using this car for 10 yea...', },
             { user: 'John Johnson', text: 'I’ve been using this car for 10 yea...', },
             { user: 'John Johnson', text: 'I’ve been using this car for 10 yea...', },
         ],
-        take: [
+        reviews: [
+            { user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit ' },
+            { user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit ' },
+            { user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit ' },
             { user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit ' },
             { user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit ' },
             { user: 'John Johnson', date: 'aug 12', text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dapibus accumsan turpis et luctus. Morbi ultricies sem eu velit et luctus. Morbi ultricies sem eu velit ' },

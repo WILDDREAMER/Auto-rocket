@@ -78,7 +78,6 @@ export default function Aftermarket(props) {
 
     const styling = (dark) ? { backgroundColor: colors.dark.background, color: colors.dark.text } : { backgroundColor: colors.light.background, color: (colors.light.text) }
 
-
     return (
         <div style={styling} className='aftermarket'>
             <TopBar back={back} dark={dark} sendLink={getLink} ></TopBar>

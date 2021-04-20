@@ -104,7 +104,7 @@ export default function Car({ car, dark }) {
                 <p className='title'>Our Take</p>
                 <div className='takeContainer'>
                     {
-                        car.take.map((take, index) => {
+                        car.reviews.map((take, index) => {
                             return <Take index={index} key={index} dark={dark} take={take}></Take>
                         })
                     }

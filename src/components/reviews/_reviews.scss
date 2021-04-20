@@ -1,0 +1,15 @@
+.reviews{
+    padding: 20px;
+    .title{
+        padding-bottom: 16px;
+        font-family: $font-primary-semi-bold;
+        font-size: 24px;
+        text-align: center;
+        padding: 24px;
+    }
+    .cardsContainer{
+        @include flex(center,center);
+        flex-direction: column;
+        gap: 1px;
+    }
+}

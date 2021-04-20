@@ -1,0 +1,24 @@
+.features{
+    @include flex(center, flex-start);
+    flex-direction: column;
+    gap: 24px;
+    .title{
+        font-family: $font-primary-bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 38px;
+    }
+    .feature{
+        @include flex(center, flex-start);
+        flex-direction: column;
+        // gap: 12px;
+        .text{
+            font-family: $font-primary-medium;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 38px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.whatPeopleSay{
+    .peopleCard{
+        overflow: hidden;
+        height: 123px;
+        @include flex(center,center);
+        img{
+            width: 124px;
+        }
+        .text{
+            padding: 30px 20px 20px;
+            .title{
+                text-align: left;
+                font-family: $font-primary-medium;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.02em;
+            }
+            .comment{
+                font-family: $font-primary-semi-bold;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: -0.02em;
+            }
+        }
+    }
+}

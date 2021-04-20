@@ -1,0 +1,167 @@
+.car{
+    @include flex(center,center);
+    flex-direction: column;
+    position: relative;
+    .like{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .image{
+        width: 100%;
+    }
+    .rate{
+        display: flex;
+        gap: 5px;
+        height: 24px;
+        img{
+            width: 17px;
+        }
+    }
+    .quality{
+        padding-top: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        @include flex(space-between, center);
+        flex-wrap: wrap;
+        .status{
+            width: 30%;
+            font-family: $font-primary-semi-bold;
+            &.fuel{
+                width: 37%;
+                .fuel-container{
+                    @include flex(flex-start,center);
+                    gap: 4px;
+                }
+            }
+        }
+        .titleAndPrice{
+            width: 100%;
+            margin-top: 32px;
+            margin-bottom: 24px;
+            @include flex(flex-start,center);
+            flex-wrap: wrap;
+            p{
+                width: 50%;
+            }
+            .title{
+                font-family: $font-primary-bold;
+                font-size: 23px;
+            }
+            .sub{
+                font-family: $font-primary-semi-bold;
+                font-size: 23px;
+                text-align: right;
+            }
+            .sec{
+                font-family: $font-primary-regular;
+                font-size: 16px;
+                opacity: 0.7;
+            }
+        }
+    }
+    .testHolder{
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        .test{
+            padding: 6px 20px;
+            background-color: #0A84FF;
+            @include flex(space-between, center);
+            font-family: $font-primary-semi-bold;
+            .left{
+                height: 22px;
+                @include flex(space-between, center);
+                gap: 4px;
+                font-size: 17px;
+            }
+            .right{
+                font-size: 16px;
+                .refund{
+                    font-family: $font-primary-regular;
+                    font-size: 12px;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+    .bodyNavigation{
+        width: 100%;
+        padding: 48px 20px 72px;
+        .header{
+            @include flex(Center, center);
+            p{
+                font-family: $font-primary-medium;
+                font-size: 18px;
+                text-align: center;
+                flex: 1;
+                opacity: 0.5;
+                border-bottom: 3px solid;
+                &.selected{
+                    opacity: 1;
+                }
+            }
+        }
+        .navigationContent{
+            padding-top: 24px;
+            @include flex(flex-start, center);
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+    .ourTake{
+        @include flex(center,center);
+        flex-direction: column;
+        width: 100%;
+        padding:32px 20px 72px 20px; 
+        .title{
+            padding-bottom: 10px;
+            font-family: $font-primary-semi-bold;
+            font-size: 24px;
+            text-align: center;
+        }
+        .takeContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            width: 100%;
+        }
+        .seeAll{
+            font-family: $font-primary-semi-bold;
+            font-size: 16px;
+            color: #007bff;
+            width: 100%;
+            text-align: center;
+            padding: 8px;
+            border-radius: 0 0 16px 16px;
+        }
+    }
+    .whatPeopleSay{
+        padding-bottom: 72px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        .title{
+            padding-bottom: 16px;
+            font-family: $font-primary-semi-bold;
+            font-size: 24px;
+            text-align: center;
+        }
+        .peopleContainer{
+            gap: 16px;
+            @include flex(center,center);
+            flex-direction: column;
+        }
+    }
+    .moreLikeThis{
+        width: 100%;
+        .title{
+            padding-bottom: 16px;
+            font-family: $font-primary-semi-bold;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+}

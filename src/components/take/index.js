@@ -1,16 +1,16 @@
 import icon from '../../data/images/feedback.svg'
+import iconDark from '../../data/images/feedbackDark.svg'
 import ShowMoreText from 'react-show-more-text';
 import { colors, radius } from '../../data/global';
 
 export default function Take({ dark, take, index }) {
-    const style = (dark) ? { backgroundColor: colors.dark.card, color: colors.dark.text}
+    const style = (dark) ? { backgroundColor: colors.dark.card, color: colors.dark.text, borderRadius: (index == 0) ? '16px 16px 0px 0px' : '0px'}
         :
         { backgroundColor: colors.light.background, color: colors.light.text, borderRadius: (index == 0) ? '16px 16px 0px 0px' : '0px' }
-    console.log(index)
     return (
         <div className='take' style={style}>
             <div className='header'>
-                <img src={icon} alt="" />
+                <img src={(dark) ? iconDark : icon} alt="" />
                 <p>{take.user}</p>
                 <p className='date'>{take.date}</p>
             </div>
@@ -22,7 +22,7 @@ export default function Take({ dark, take, index }) {
                 anchorClass='my-anchor-css-class'
                 // onClick={this.executeOnClick}
                 expanded={false}
-                width={380}
+                width={334}
             >
                 {take.text}
             </ShowMoreText>

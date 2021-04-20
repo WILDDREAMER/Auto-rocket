@@ -23,7 +23,7 @@ export default function CarCard({ dark, car }) {
                     <p className='title' style={textStyling}>{car.title}</p>
                     <p className='subtitle' >${car.subtitle}</p>
                 </div>
-                <p className='secondTitle'>{car.secondTitle}</p>
+                <p className='secondTitle' style={textStyling}>{car.secondTitle}</p>
                 <Type car={car} dark={dark}></Type>
                 <div className='text-field'>
                     <p className='infos' style={textStyling}>{text.card.info2}</p>
